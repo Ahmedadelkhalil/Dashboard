@@ -17,8 +17,71 @@
     ></script>
   </head>
   <body>
+    <div class="SmartPhoneFixedTopBar">
+      <div><i class="fa-solid fa-bars"></i></div>
+      <div class="mobilethemeandadmin">
+        <div class="sun-moon-mobile">
+          <i class="fa-solid fa-sun themeOn" title="Light Theme"></i>
+          <i class="fa-solid fa-moon" title="Dark Theme"></i>
+        </div>
+        <div class="admin-photo-mobile">
+          <img src="images/Avatar/admin.jpg" alt="" title="Admin" />
+        </div>
+      </div>
+    </div>
+    <div class="mobile-aside">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="aside-top">
+        <div class="logo"><img src="images/logo/images.png" alt="" /></div>
+        <div class="logo-name">
+          YOUR <span class="color-of-half-of-logo-name">LOGO</span>
+        </div>
+      </div>
+      <div class="left-options">
+        <div class="op-holder active" data-directdb="dashboard" id="middle-One">
+          <i class="fa-solid fa-table-cells-large"></i>
+          <p>dashboard</p>
+        </div>
+        <div class="op-holder" data-directcu="customers" id="middle-Two">
+          <i class="fa-solid fa-user"></i>
+          <p>customer</p>
+        </div>
+        <div class="op-holder" data-director="order" id="middle-Three">
+          <i class="fa-solid fa-note-sticky"></i>
+          <p>orders</p>
+        </div>
+        <div class="op-holder" data-directana="analytics" id="middle-Four">
+          <i class="fa-solid fa-chart-pie"></i>
+          <p>analytics</p>
+        </div>
+        <div class="op-holder" data-directmsg="messages" id="middle-Five">
+          <i class="fa-solid fa-message"></i>
+          <p>messages <span class="num-msg">10</span></p>
+        </div>
+        <div class="op-holder" data-directpro="products" id="middle-Six">
+          <i class="fa-solid fa-file-circle-check"></i>
+          <p>products</p>
+        </div>
+        <div class="op-holder" data-directsign="SignUp" id="middle-Seven">
+          <i class="fa-solid fa-address-card"></i>
+          <p>sign up <span class="new-feature">new</span></p>
+        </div>
+        <div class="op-holder">
+          <i class="fa-solid fa-gear"></i>
+          <p>settings</p>
+        </div>
+        <div class="op-holder">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>add product</p>
+        </div>
+        <div class="op-holder">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <p>logout</p>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <aside>
+      <aside class="desktop-aside">
         <div class="aside-top">
           <div class="logo"><img src="images/logo/images.png" alt="" /></div>
           <div class="logo-name">
@@ -73,7 +136,7 @@
         </div>
       </aside>
       <section class="dashboard active-screen">
-        <h1>dashboard</h1>
+        <h1 class="h-one-dashboard">dashboard</h1>
         <div class="cards">
           <!-- card one -->
           <div class="card-1">
@@ -132,64 +195,64 @@
           </div>
         </div>
         <!-- ................................ END OF CARDS -->
-        <h1>recent orders</h1>
+        <h1 class="h-one-recentorder">recent orders</h1>
         <div class="table">
           <table>
             <tr>
               <th>product name</th>
-              <th>product number</th>
+              <th class="not-in-smart-phone-design">product number</th>
               <th>payment</th>
               <th>status</th>
-              <th>&nbsp;</th>
+              <th class="not-in-smart-phone-design">&nbsp;</th>
             </tr>
             <tr class="line">
               <td>foldable mini drone</td>
-              <td>85631</td>
+              <td class="not-in-smart-phone-design">85631</td>
               <td>due</td>
               <td class="pending">pending</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
             <tr class="line">
               <td>larvender kf 102 drone</td>
-              <td>36370</td>
+              <td class="not-in-smart-phone-design">36370</td>
               <td>refunded</td>
               <td class="declined">declined</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
             <tr class="line">
               <td>ruko f11 pro drone</td>
-              <td>49347</td>
+              <td class="not-in-smart-phone-design">49347</td>
               <td>due</td>
               <td class="pending">pending</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
             <tr class="line">
               <td>drone with camera drone</td>
-              <td>96996</td>
+              <td class="not-in-smart-phone-design">96996</td>
               <td>paid</td>
               <td class="delivered">delivered</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
             <tr class="line">
               <td>gps 4k drone</td>
-              <td>22821</td>
+              <td class="not-in-smart-phone-design">22821</td>
               <td>paid</td>
               <td class="delivered">delivered</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
             <tr class="line">
               <td>dji air 2s</td>
-              <td>81475</td>
+              <td class="not-in-smart-phone-design">81475</td>
               <td>due</td>
               <td class="pending">pending</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
             <tr>
               <td>lozenge drone</td>
-              <td>00402</td>
+              <td class="not-in-smart-phone-design">00402</td>
               <td>paid</td>
               <td class="delivered">delivered</td>
-              <td class="details">details</td>
+              <td class="details not-in-smart-phone-design">details</td>
             </tr>
           </table>
           <div class="show-more">show more</div>
@@ -205,7 +268,7 @@
           <table>
             <tr>
               <th>name</th>
-              <th>company</th>
+              <th class="not-in-smart-phone-design">company</th>
               <th>email</th>
             </tr>
             <!-- ......................... -->
@@ -214,7 +277,7 @@
                 <img src="images/customers/clients/men/1.jpg" />
                 <span>felix reoyar</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/dribbble.jpg" />
                 <span>dribbble</span>
               </td>
@@ -226,7 +289,7 @@
                 <img src="images/customers/clients/women/1.jpg" />
                 <span>hannah rey</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/figma.png" />
                 <span>figma c</span>
               </td>
@@ -238,7 +301,7 @@
                 <img src="images/customers/clients/men/2.jpg" />
                 <span>simon vinct</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/notion.png" />
                 <span>notion c</span>
               </td>
@@ -250,7 +313,7 @@
                 <img src="images/customers/clients/men/3.jpg" />
                 <span>romio baro</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/Airtable.png" />
                 <span>airtable c</span>
               </td>
@@ -262,7 +325,7 @@
                 <img src="images/customers/clients/women/2.jpg" />
                 <span>jsmin hum</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img
                   src="images/customers/compaines/egoscnldneckgihlgrph.webp"
                 />
@@ -274,9 +337,9 @@
             <tr>
               <td>
                 <img src="images/customers/clients/women/3.jpg" />
-                <span>julie guilo</span>
+                <span>julie guilloo</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/kairn.jpg" />
                 <span>kairn com</span>
               </td>
@@ -286,9 +349,9 @@
             <tr>
               <td>
                 <img src="images/customers/clients/women/4.jpg" />
-                <span>maeva gro</span>
+                <span>maeva grro</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/Spendesk.png" />
                 <span>spendesk</span>
               </td>
@@ -298,9 +361,9 @@
             <tr>
               <td>
                 <img src="images/customers/clients/men/4.jpg" />
-                <span>zchary fer</span>
+                <span>zchary ferr</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/front.png" />
                 <span>front com</span>
               </td>
@@ -312,7 +375,7 @@
                 <img src="images/customers/clients/women/5.jpg" />
                 <span>taylor clrk</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/Efounders.png" />
                 <span>efounders</span>
               </td>
@@ -324,7 +387,7 @@
                 <img src="images/customers/clients/men/5.jpg" />
                 <span>logan baly</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/Ramotion.png" />
                 <span>ramotion</span>
               </td>
@@ -334,9 +397,9 @@
             <tr>
               <td>
                 <img src="images/customers/clients/men/images.jpg" />
-                <span>Mark z.berg</span>
+                <span>Mark zberg</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img
                   src="images/customers/compaines/Facebook_f_logo_(2019).svg.png"
                 />
@@ -350,7 +413,7 @@
                 <img src="images/customers/clients/women/marissa_mayer.gif" />
                 <span>Marissa Mi.</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/179345.png" />
                 <span>yahoo co</span>
               </td>
@@ -362,7 +425,7 @@
                 <img src="images/customers/clients/men/microsoft.ceo.jpg" />
                 <span>Satya Nad.</span>
               </td>
-              <td>
+              <td class="not-in-smart-phone-design">
                 <img src="images/customers/compaines/Microsoft_logo.svg.png" />
                 <span>microsoft</span>
               </td>
@@ -984,110 +1047,112 @@
         </form>
       </section>
       <!-- ending sign up section -->
-      <section class="right-side">
-        <div class="part-one">
-          <div class="sun-moon">
-            <i class="fa-solid fa-sun themeOn" title="Light Theme"></i>
-            <i class="fa-solid fa-moon" title="Dark Theme"></i>
-          </div>
-          <div class="admin">
-            <div class="admin-info">
-              <p>Hey , <span class="admin-name">Ahmed</span></p>
-              <p class="ad-word">admin</p>
+      <div class="right-side-smart-phone-holder">
+        <section class="right-side">
+          <div class="part-one">
+            <div class="sun-moon">
+              <i class="fa-solid fa-sun themeOn" title="Light Theme"></i>
+              <i class="fa-solid fa-moon" title="Dark Theme"></i>
             </div>
-            <div class="admin-photo">
-              <img src="images/Avatar/admin.jpg" alt="" title="Admin" />
-            </div>
-          </div>
-        </div>
-        <div class="part-two">
-          <h1>recent updates</h1>
-          <div class="update-box">
-            <div class="avatar-1">
-              <img src="images/Avatar/1.jpg" alt="" />
-              <div>
-                <p>
-                  <span class="client">mike tyson</span>
-                  <span class="inc">received</span> his order of night lion tech
-                  GPS drone
-                </p>
-                <p class="time">2 minutes ago</p>
+            <div class="admin">
+              <div class="admin-info">
+                <p>Hey , <span class="admin-name">Ahmed</span></p>
+                <p class="ad-word">admin</p>
+              </div>
+              <div class="admin-photo">
+                <img src="images/Avatar/admin.jpg" alt="" title="Admin" />
               </div>
             </div>
-            <!-- ............. -->
-            <div class="avatar-2">
-              <img src="images/Avatar/2.jpg" alt="" />
-              <div>
-                <p>
-                  <span class="client">diana ayi</span>
-                  <span class="dec">declined</span> her order of 2 DJI Air 2s
-                </p>
-                <p class="time">5 minutes ago</p>
-              </div>
-            </div>
-            <!-- .................... -->
-            <div class="avatar-3">
-              <img src="images/Avatar/3.jpg" alt="" />
-              <div>
-                <p>
-                  <span class="client">mandy roy</span>
-                  <span class="inc">received</span> her order of larvender kf
-                  102 drone
-                </p>
-                <p class="time">6 minutes ago</p>
-              </div>
-            </div>
-            <!-- .............. -->
-            <div class="avatar-4">
-              <img src="images/Avatar/4.jpg" alt="" />
-              <div>
-                <p>
-                  <span class="client">arina gomiz</span>
-                  <span class="dec">declined</span> her order of Gps 4k Drone
-                </p>
-                <p class="time">9 minutes ago</p>
-              </div>
-            </div>
-            <!-- .............. -->
           </div>
-        </div>
-        <div class="part-3">
-          <h1>sales analytics</h1>
-          <div class="analysis">
-            <div class="analytics-1">
-              <span><i class="fa-solid fa-bag-shopping"></i></span>
-              <span>
-                <p class="type-of-process">online orders</p>
-                <p class="time-of-process">last 24 hours</p>
-              </span>
-              <span class="inc">+39%</span>
-              <span class="theNum">3849</span>
+          <div class="part-two">
+            <h1>recent updates</h1>
+            <div class="update-box">
+              <div class="avatar-1">
+                <img src="images/Avatar/1.jpg" alt="" />
+                <div>
+                  <p>
+                    <span class="client">mike tyson</span>
+                    <span class="inc">received</span> his order of night lion
+                    tech GPS drone
+                  </p>
+                  <p class="time">2 minutes ago</p>
+                </div>
+              </div>
+              <!-- ............. -->
+              <div class="avatar-2">
+                <img src="images/Avatar/2.jpg" alt="" />
+                <div>
+                  <p>
+                    <span class="client">diana ayi</span>
+                    <span class="dec">declined</span> her order of 2 DJI Air 2s
+                  </p>
+                  <p class="time">5 minutes ago</p>
+                </div>
+              </div>
+              <!-- .................... -->
+              <div class="avatar-3">
+                <img src="images/Avatar/3.jpg" alt="" />
+                <div>
+                  <p>
+                    <span class="client">mandy roy</span>
+                    <span class="inc">received</span> her order of larvender kf
+                    102 drone
+                  </p>
+                  <p class="time">6 minutes ago</p>
+                </div>
+              </div>
+              <!-- .............. -->
+              <div class="avatar-4">
+                <img src="images/Avatar/4.jpg" alt="" />
+                <div>
+                  <p>
+                    <span class="client">arina gomiz</span>
+                    <span class="dec">declined</span> her order of Gps 4k Drone
+                  </p>
+                  <p class="time">9 minutes ago</p>
+                </div>
+              </div>
+              <!-- .............. -->
             </div>
-            <!-- ............... -->
-            <div class="analytics-2">
-              <span><i class="fa-solid fa-cart-shopping"></i></span>
-              <span>
-                <p class="type-of-process">offline orders</p>
-                <p class="time-of-process">last 24 hours</p>
-              </span>
-              <span class="dec">-17%</span>
-              <span class="theNum">1100</span>
-            </div>
-            <!-- ............... -->
-            <div class="analytics-3">
-              <span><i class="fa-solid fa-user"></i></span>
-              <span>
-                <p class="type-of-process">new customer</p>
-                <p class="time-of-process">last 24 hours</p>
-              </span>
-              <span class="inc">+25%</span>
-              <span class="theNum">849</span>
-            </div>
-            <!-- ............... -->
           </div>
-        </div>
-        <span class="add-p">+ add product</span>
-      </section>
+          <div class="part-3">
+            <h1>sales analytics</h1>
+            <div class="analysis">
+              <div class="analytics-1">
+                <span><i class="fa-solid fa-bag-shopping"></i></span>
+                <span>
+                  <p class="type-of-process">online orders</p>
+                  <p class="time-of-process">last 24 hours</p>
+                </span>
+                <span class="inc">+39%</span>
+                <span class="theNum">3849</span>
+              </div>
+              <!-- ............... -->
+              <div class="analytics-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <span>
+                  <p class="type-of-process">offline orders</p>
+                  <p class="time-of-process">last 24 hours</p>
+                </span>
+                <span class="dec">-17%</span>
+                <span class="theNum">1100</span>
+              </div>
+              <!-- ............... -->
+              <div class="analytics-3">
+                <span><i class="fa-solid fa-user"></i></span>
+                <span>
+                  <p class="type-of-process">new customer</p>
+                  <p class="time-of-process">last 24 hours</p>
+                </span>
+                <span class="inc">+25%</span>
+                <span class="theNum">849</span>
+              </div>
+              <!-- ............... -->
+            </div>
+          </div>
+          <span class="add-p">+ add product</span>
+        </section>
+      </div>
     </div>
     <!--                       ICONS                         -->
     <!-- <i class="fa-solid fa-bars"></i>        BURGER ICON -->

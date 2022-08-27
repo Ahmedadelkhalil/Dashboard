@@ -12,7 +12,7 @@ let i = 1;
 let started = false;
 
 window.onload = function () {
-  if (window.scrollY >= cards.offsetTop - 100) {
+  if (window.scrollY >= cards.offsetTop - 300) {
     if (!started) {
       startcount(numCountOne.textContent);
       moneyCount(money.textContent);
@@ -166,6 +166,34 @@ window.onload = function () {
   }
   if (window.sessionStorage.getItem("passCon")) {
     passwordConfirmField.value = window.sessionStorage.getItem("passCon");
+  }
+
+  if (
+    window.localStorage.getItem("mobile aside menu theme") ===
+    "mobile-aside show-mobile-aside light-mode"
+  ) {
+    document.querySelector(".mobile-aside").classList.remove("dark-mode");
+    document.querySelector(".mobile-aside").classList.add("light-mode");
+  } else if (
+    window.localStorage.getItem("mobile aside menu theme") ===
+    "mobile-aside show-mobile-aside dark-mode"
+  ) {
+    document.querySelector(".mobile-aside").classList.remove("light-mode");
+    document.querySelector(".mobile-aside").classList.add("dark-mode");
+  }
+
+  if (
+    window.localStorage.getItem("mobile aside menu theme") ===
+    "mobile-aside light-mode"
+  ) {
+    document.querySelector(".mobile-aside").classList.remove("dark-mode");
+    document.querySelector(".mobile-aside").classList.add("light-mode");
+  } else if (
+    window.localStorage.getItem("mobile aside menu theme") ===
+    "mobile-aside dark-mode"
+  ) {
+    document.querySelector(".mobile-aside").classList.remove("light-mode");
+    document.querySelector(".mobile-aside").classList.add("dark-mode");
   }
 };
 
@@ -372,13 +400,25 @@ darkTheme.addEventListener("click", () => {
   container.classList.add("darkon");
   lightTheme.classList.remove("themeOn");
   darkTheme.classList.add("themeOn");
+  document.querySelector(".mobile-aside").classList.add("dark-mode");
+  document.querySelector(".mobile-aside").classList.remove("light-mode");
   window.localStorage.setItem("theme", container.classList);
+  window.localStorage.setItem(
+    "mobile aside menu theme",
+    document.querySelector(".mobile-aside").classList
+  );
 });
 lightTheme.addEventListener("click", () => {
   container.classList.remove("darkon");
   lightTheme.classList.add("themeOn");
   darkTheme.classList.remove("themeOn");
+  document.querySelector(".mobile-aside").classList.remove("dark-mode");
+  document.querySelector(".mobile-aside").classList.add("light-mode");
   window.localStorage.setItem("theme", container.classList);
+  window.localStorage.setItem(
+    "mobile aside menu theme",
+    document.querySelector(".mobile-aside").classList
+  );
 });
 
 //................................................................
@@ -739,6 +779,21 @@ passwordField.onblur = () => {
 passwordConfirmField.onblur = () => {
   window.sessionStorage.setItem("passCon", passwordConfirmField.value);
 };
+
+//.............................. MOBILE TOGGOLE BUTTON
+
+let bar = document.querySelector(".fa-bars");
+let mobileAside = document.querySelector(".mobile-aside");
+
+bar.addEventListener("click", () => {
+  mobileAside.classList.toggle("show-mobile-aside");
+});
+
+let xMark = document.querySelector(".fa-xmark");
+
+xMark.addEventListener("click", () => {
+  mobileAside.classList.remove("show-mobile-aside");
+});
 
 //................................ END SETTING FORM INFO IN SESSION STORAGE
 //.......... END JS FUNCTIONALITY ..
