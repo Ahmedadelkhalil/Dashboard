@@ -1,0 +1,232 @@
+.analytics {
+  width: 750px;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+  &.active-screen {
+    display: block;
+    opacity: 1;
+  }
+  h1 {
+    width: 100px;
+    margin: 29px 10px 0px 10px;
+  }
+  .analytics-main-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: tahoma;
+    font-size: 11px;
+    margin-top: 10px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+  .analytics-boxes {
+    @extend %display;
+    margin-top: 10px;
+    .ana-inside-box {
+      width: 200px;
+      text-align: center;
+      text-transform: capitalize;
+      font-family: tahoma;
+      background-color: $color-5;
+      color: $color-main;
+      font-weight: bolder;
+      font-size: 14px;
+      padding: 5px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      margin: 5px;
+      p {
+        margin: 10px;
+      }
+    }
+    .arrow-top-1,
+    .arrow-top-2,
+    .arrow-top-3 {
+      color: $color-3;
+      font-size: 15px;
+    }
+    .arrow-down {
+      color: $color-2;
+      font-size: 15px;
+    }
+    .box-title {
+      color: $color-1;
+      font-weight: bolder;
+    }
+    .ana-num-value-1,
+    .ana-num-value-2,
+    .ana-num-value-3,
+    .ana-num-value-4 {
+      font-size: 20px;
+    }
+  }
+  .analytics-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    img {
+      width: 650px;
+      height: 300px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    .chart-dotsAndtitle {
+      width: 400px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        @extend %display;
+      }
+      p {
+        margin: 0;
+        font: {
+          weight: bolder;
+          family: tahoma;
+        }
+        text-transform: capitalize;
+      }
+      .dot-1 {
+        width: 15px;
+        height: 15px;
+        background-color: #283250;
+        margin-right: 5px;
+      }
+      .dot-2 {
+        width: 15px;
+        height: 15px;
+        background-color: #f05440;
+        margin-right: 5px;
+      }
+    }
+  }
+  .analytics-progress-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    .ana-progress-bar-one,
+    .ana-progress-bar-two {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-5;
+      padding: 15px;
+      border-radius: 7px;
+      font-family: tahoma;
+      font-size: 15px;
+      margin: 10px;
+      & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      p {
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      .dots-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100px;
+          font-size: 13px;
+          &:not(:nth-child(2)) {
+            margin-bottom: 10px;
+          }
+          p {
+            margin: 0;
+            font-size: 12px !important;
+          }
+          .left-dot-1,
+          .right-dot-1 {
+            width: 15px;
+            height: 15px;
+            background-color: $color-1;
+            margin-right: 5px;
+          }
+          .left-dot-2,
+          .right-dot-2 {
+            width: 15px;
+            height: 15px;
+            background-color: $color-3;
+            margin-right: 5px;
+          }
+        }
+      }
+      .ana-circle-1,
+      .ana-circle-2 {
+        width: 120px;
+        height: 120px;
+        background-color: transparent;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .ana-circle-1-bar,
+        .ana-circle-2-bar {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+        .ana-circle-1-bar {
+          background: conic-gradient($color-1 280deg, $color-3 80deg);
+        }
+        .ana-circle-2-bar {
+          background: conic-gradient($color-3 280deg, $color-1 80deg);
+        }
+        .ana-inside-circle-1,
+        .ana-inside-circle-2 {
+          position: absolute;
+          width: 90px;
+          height: 90px;
+          background-color: $color-7;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+  .show-more-4 {
+    @extend %display;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: tahoma;
+    font-size: 13px;
+    cursor: pointer;
+    color: $color-1;
+  }
+}

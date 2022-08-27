@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/images.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Dashboard</title>
+    <script
+      src="https://kit.fontawesome.com/61aeef4294.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="aside-top">
+          <div class="logo"><img src="images/logo/images.png" alt="" /></div>
+          <div class="logo-name">
+            YOUR <span class="color-of-half-of-logo-name">LOGO</span>
+          </div>
+        </div>
+        <div class="left-options">
+          <div
+            class="op-holder active"
+            data-directdb="dashboard"
+            id="middle-One"
+          >
+            <i class="fa-solid fa-table-cells-large"></i>
+            <p>dashboard</p>
+          </div>
+          <div class="op-holder" data-directcu="customers" id="middle-Two">
+            <i class="fa-solid fa-user"></i>
+            <p>customer</p>
+          </div>
+          <div class="op-holder" data-director="order" id="middle-Three">
+            <i class="fa-solid fa-note-sticky"></i>
+            <p>orders</p>
+          </div>
+          <div class="op-holder" data-directana="analytics" id="middle-Four">
+            <i class="fa-solid fa-chart-pie"></i>
+            <p>analytics</p>
+          </div>
+          <div class="op-holder" data-directmsg="messages" id="middle-Five">
+            <i class="fa-solid fa-message"></i>
+            <p>messages <span class="num-msg">10</span></p>
+          </div>
+          <div class="op-holder" data-directpro="products" id="middle-Six">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <p>products</p>
+          </div>
+          <div class="op-holder" data-directsign="SignUp" id="middle-Seven">
+            <i class="fa-solid fa-address-card"></i>
+            <p>sign up <span class="new-feature">new</span></p>
+          </div>
+          <div class="op-holder">
+            <i class="fa-solid fa-gear"></i>
+            <p>settings</p>
+          </div>
+          <div class="op-holder">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>add product</p>
+          </div>
+          <div class="op-holder">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>logout</p>
+          </div>
+        </div>
+      </aside>
+      <section class="dashboard active-screen">
+        <h1>dashboard</h1>
+        <div class="cards">
+          <!-- card one -->
+          <div class="card-1">
+            <div class="top-card"><i class="fa-solid fa-chart-simple"></i></div>
+            <div class="mid-card">
+              <div class="txt">
+                <p>total sales</p>
+                <p class="money-gained" data-money="1000">0</p>
+              </div>
+              <div class="circle">
+                <div class="progress-1"></div>
+                <div class="in-circle">
+                  <p class="percentage-num-count-1" data-goal="80">0</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-update"><p>last 24 hours</p></div>
+          </div>
+          <!-- card two -->
+          <div class="card-2">
+            <div class="top-card">
+              <i class="fa-solid fa-sack-dollar"></i>
+            </div>
+            <div class="mid-card">
+              <div class="txt">
+                <p>total expenses</p>
+                <p class="loss" data-moneytwo="400">0</p>
+              </div>
+              <div class="circle">
+                <div class="progress-2"></div>
+                <div class="in-circle">
+                  <p class="percentage-num-count-2" data-goaltwo="62">0</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-update"><p>last 24 hours</p></div>
+          </div>
+          <!-- card three -->
+          <div class="card-3">
+            <div class="top-card">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <div class="mid-card">
+              <div class="txt">
+                <p>total income</p>
+                <p class="gross" data-moneythree="600">0</p>
+              </div>
+              <div class="circle">
+                <div class="progress-3"></div>
+                <div class="in-circle">
+                  <p class="percentage-num-count-3" data-goalthree="44">0</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-update"><p>last 24 hours</p></div>
+          </div>
+        </div>
+        <!-- ................................ END OF CARDS -->
+        <h1>recent orders</h1>
+        <div class="table">
+          <table>
+            <tr>
+              <th>product name</th>
+              <th>product number</th>
+              <th>payment</th>
+              <th>status</th>
+              <th>&nbsp;</th>
+            </tr>
+            <tr class="line">
+              <td>foldable mini drone</td>
+              <td>85631</td>
+              <td>due</td>
+              <td class="pending">pending</td>
+              <td class="details">details</td>
+            </tr>
+            <tr class="line">
+              <td>larvender kf 102 drone</td>
+              <td>36370</td>
+              <td>refunded</td>
+              <td class="declined">declined</td>
+              <td class="details">details</td>
+            </tr>
+            <tr class="line">
+              <td>ruko f11 pro drone</td>
+              <td>49347</td>
+              <td>due</td>
+              <td class="pending">pending</td>
+              <td class="details">details</td>
+            </tr>
+            <tr class="line">
+              <td>drone with camera drone</td>
+              <td>96996</td>
+              <td>paid</td>
+              <td class="delivered">delivered</td>
+              <td class="details">details</td>
+            </tr>
+            <tr class="line">
+              <td>gps 4k drone</td>
+              <td>22821</td>
+              <td>paid</td>
+              <td class="delivered">delivered</td>
+              <td class="details">details</td>
+            </tr>
+            <tr class="line">
+              <td>dji air 2s</td>
+              <td>81475</td>
+              <td>due</td>
+              <td class="pending">pending</td>
+              <td class="details">details</td>
+            </tr>
+            <tr>
+              <td>lozenge drone</td>
+              <td>00402</td>
+              <td>paid</td>
+              <td class="delivered">delivered</td>
+              <td class="details">details</td>
+            </tr>
+          </table>
+          <div class="show-more">show more</div>
+        </div>
+      </section>
+      <!-- start customers section -->
+      <section class="customers middle">
+        <div class="customers-title">
+          <h1>customers</h1>
+          <p>people & companies <span class="com-num">10</span></p>
+        </div>
+        <div class="table-2">
+          <table>
+            <tr>
+              <th>name</th>
+              <th>company</th>
+              <th>email</th>
+            </tr>
+            <!-- ......................... -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/1.jpg" />
+                <span>felix reoyar</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/dribbble.jpg" />
+                <span>dribbble</span>
+              </td>
+              <td>felix@dribbble.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/women/1.jpg" />
+                <span>hannah rey</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/figma.png" />
+                <span>figma c</span>
+              </td>
+              <td>hannah@figma.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/2.jpg" />
+                <span>simon vinct</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/notion.png" />
+                <span>notion c</span>
+              </td>
+              <td>simon@notion.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/3.jpg" />
+                <span>romio baro</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/Airtable.png" />
+                <span>airtable c</span>
+              </td>
+              <td>romio@airtable.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/women/2.jpg" />
+                <span>jsmin hum</span>
+              </td>
+              <td>
+                <img
+                  src="images/customers/compaines/egoscnldneckgihlgrph.webp"
+                />
+                <span>folk com</span>
+              </td>
+              <td>jsmin@folk.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/women/3.jpg" />
+                <span>julie guilo</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/kairn.jpg" />
+                <span>kairn com</span>
+              </td>
+              <td>julie@kairn.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/women/4.jpg" />
+                <span>maeva gro</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/Spendesk.png" />
+                <span>spendesk</span>
+              </td>
+              <td>maeva@spendesk.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/4.jpg" />
+                <span>zchary fer</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/front.png" />
+                <span>front com</span>
+              </td>
+              <td>zachary@front.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/women/5.jpg" />
+                <span>taylor clrk</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/Efounders.png" />
+                <span>efounders</span>
+              </td>
+              <td>taylor@efounders.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/5.jpg" />
+                <span>logan baly</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/Ramotion.png" />
+                <span>ramotion</span>
+              </td>
+              <td>logan@ramotion.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/images.jpg" />
+                <span>Mark z.berg</span>
+              </td>
+              <td>
+                <img
+                  src="images/customers/compaines/Facebook_f_logo_(2019).svg.png"
+                />
+                <span>facebook</span>
+              </td>
+              <td>mark@facebook.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/women/marissa_mayer.gif" />
+                <span>Marissa Mi.</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/179345.png" />
+                <span>yahoo co</span>
+              </td>
+              <td>marissa@yahoo.com</td>
+            </tr>
+            <!-- ............................ -->
+            <tr>
+              <td>
+                <img src="images/customers/clients/men/microsoft.ceo.jpg" />
+                <span>Satya Nad.</span>
+              </td>
+              <td>
+                <img src="images/customers/compaines/Microsoft_logo.svg.png" />
+                <span>microsoft</span>
+              </td>
+              <td>satya@microsoft.com</td>
+            </tr>
+            <!-- ............................ -->
+          </table>
+        </div>
+        <div class="show-more-2"><p>show more</p></div>
+      </section>
+      <!-- end of the customers section -->
+
+      <!-- starting the order section  -->
+      <section class="order">
+        <h1>order details</h1>
+        <p class="order-des">
+          in the order details section you can review and manage the orders with
+          their details. you can view and edit many info such as iDs of all
+          credits order products , order dates , price and order status access
+          to this area is limited only administrators and team leaders can
+          reach. the changes you make will be approved after they are checked.
+        </p>
+        <ul class="order-process-type">
+          <li class="active-order" data-order=".all">all orders</li>
+          <li data-order=".completed">completed</li>
+          <li data-order=".continuing">continuing</li>
+          <li data-order=".restitute">restitute</li>
+          <li data-order=".cancelled">cancelled</li>
+        </ul>
+        <div class="s-part">
+          <input
+            type="search"
+            class="search-btn"
+            placeholder="search for order ..."
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="table-3">
+          <table>
+            <tr>
+              <th>order id</th>
+              <th>customer</th>
+              <th>order</th>
+              <th>delivery date</th>
+              <th>delivery pricing</th>
+              <th>delivery status</th>
+              <th>payment</th>
+            </tr>
+            <tr class="catching all restitute">
+              <td>AKN12058</td>
+              <td>Olivera Nules</td>
+              <td>Nike Tshirt</td>
+              <td>12.04.2021</td>
+              <td>$ 24.90</td>
+              <td class="res">Restitute</td>
+              <td>Credit Card</td>
+            </tr>
+            <tr class="catching all completed">
+              <td>SRT32123</td>
+              <td>Alexander Selineali</td>
+              <td>Addidas Hat</td>
+              <td>22.05.2021</td>
+              <td>$ 19.9</td>
+              <td class="com">Completed</td>
+              <td>Credit Card</td>
+            </tr>
+            <tr class="catching all completed">
+              <td>TML3D321</td>
+              <td>selman kalman</td>
+              <td>hummel sneakers</td>
+              <td>08.03.2021</td>
+              <td>$ 89.90</td>
+              <td class="com">completed</td>
+              <td>credit card</td>
+            </tr>
+            <tr class="catching all continuing">
+              <td>KKA45012</td>
+              <td>david dorinel</td>
+              <td>puma shorts</td>
+              <td>16.06.2021</td>
+              <td>$ 15.40</td>
+              <td class="continue">continue</td>
+              <td>bank transfer</td>
+            </tr>
+            <tr class="catching all continuing">
+              <td>NNP23421</td>
+              <td>marcus genihales</td>
+              <td>nike glove</td>
+              <td>24.04.2021</td>
+              <td>$ 39.90</td>
+              <td class="continue">continue</td>
+              <td>bank transfer</td>
+            </tr>
+            <tr class="catching all cancelled">
+              <td>TTS23D89</td>
+              <td>kamal soliman</td>
+              <td>nike hat</td>
+              <td>14.04.2021</td>
+              <td>$ 29.90</td>
+              <td class="can">cancelled</td>
+              <td>bank transfer</td>
+            </tr>
+            <tr class="catching all completed">
+              <td>KLB24010</td>
+              <td>henery kweale</td>
+              <td>addidas sneakers</td>
+              <td>12.05.2021</td>
+              <td>$ 99.90</td>
+              <td class="com">completed</td>
+              <td>credit card</td>
+            </tr>
+            <tr class="catching all continuing">
+              <td>ABL90821</td>
+              <td>hanna martina</td>
+              <td>puma bag</td>
+              <td>01.06.2021</td>
+              <td>$ 39.90</td>
+              <td class="continue">continue</td>
+              <td>payPal</td>
+            </tr>
+            <tr class="catching all cancelled">
+              <td>HJSD9213</td>
+              <td>stevan kolman</td>
+              <td>nike bag</td>
+              <td>30.02.2021</td>
+              <td>$ 49.90</td>
+              <td class="can">cancelled</td>
+              <td>bank transfer</td>
+            </tr>
+            <tr class="catching all restitute">
+              <td>HPO30421</td>
+              <td>haruna mahmoudi</td>
+              <td>adidas sneakers</td>
+              <td>24.06.2021</td>
+              <td>$ 79.90</td>
+              <td class="res">restiture</td>
+              <td>credit card</td>
+            </tr>
+            <tr class="catching all completed">
+              <td>HRS12040</td>
+              <td>selena selman</td>
+              <td>Hummel hat</td>
+              <td>12.06.2021</td>
+              <td>$ 14.90</td>
+              <td class="com">completed</td>
+              <td>bank transfer</td>
+            </tr>
+          </table>
+        </div>
+        <div class="show-more-3"><p>show more</p></div>
+      </section>
+      <!-- ending the order section  -->
+      <!-- starting analytics section  -->
+      <section class="analytics">
+        <h1>analytics</h1>
+        <div class="analytics-boxes">
+          <div class="ana-inside-box">
+            <p class="box-title">total sales</p>
+            <p class="ana-num-value-1" data-anatopone="434">0</p>
+            <p class="arrow-top-1" data-anatoptwo="588">0</p>
+          </div>
+          <div class="ana-inside-box">
+            <p class="box-title">total value</p>
+            <p class="ana-num-value-2" data-middleonetop="800">0</p>
+            <p class="arrow-top-2" data-middleonebottom="491">0</p>
+          </div>
+          <div class="ana-inside-box">
+            <p class="box-title">conversation rate</p>
+            <p class="ana-num-value-3" data-middleTwotop="300">0</p>
+            <p class="arrow-top-3" data-middleTwobottom="455">0</p>
+          </div>
+          <div class="ana-inside-box">
+            <p class="box-title">avarage order value</p>
+            <p class="ana-num-value-4" data-lastanatop="300">0</p>
+            <p class="arrow-down" data-lastanabottom="300">0</p>
+          </div>
+        </div>
+        <div class="analytics-main-title">
+          <h2>sales & loses in the past 4 months</h2>
+        </div>
+        <div class="analytics-chart">
+          <div>
+            <img src="images/analytics/6-Grouped-Bar-Chart.png" alt="" />
+          </div>
+          <div class="chart-dotsAndtitle">
+            <div>
+              <span class="dot-1"></span>
+              <p>sales</p>
+            </div>
+            <div>
+              <span class="dot-2"></span>
+              <p>loses</p>
+            </div>
+          </div>
+        </div>
+        <div class="analytics-progress-bars">
+          <div class="ana-progress-bar-one">
+            <div>
+              <p>transactions per source</p>
+              <div class="ana-circle-1">
+                <div class="ana-circle-1-bar"></div>
+                <div class="ana-inside-circle-1"></div>
+              </div>
+            </div>
+            <div class="dots-holder">
+              <div>
+                <span class="left-dot-1"></span>
+                <p>direct</p>
+              </div>
+              <div>
+                <span class="left-dot-2"></span>
+                <p>paid search</p>
+              </div>
+            </div>
+          </div>
+          <!-- ................. -->
+          <div class="ana-progress-bar-two">
+            <div>
+              <p>transactions per user type</p>
+              <div class="ana-circle-2">
+                <div class="ana-circle-2-bar"></div>
+                <div class="ana-inside-circle-2"></div>
+              </div>
+            </div>
+            <div class="dots-holder">
+              <div>
+                <span class="right-dot-1"></span>
+                <p>exist vis</p>
+              </div>
+              <div>
+                <span class="right-dot-2"></span>
+                <p>new vis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-more-4"><p>show more</p></div>
+      </section>
+      <!-- ending the analytics section -->
+      <!-- starting messages section -->
+      <section class="messages">
+        <h1 class="msg-title">messages</h1>
+        <div class="in-msg-search">
+          <form class="msg-form">
+            <input
+              type="text"
+              class="input-msg"
+              placeholder="search for name"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="msgs">
+          <!-- ........................... -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/women/1.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">jessica koel</p>
+              <p>hey jontray,do you remember...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">11:26</p>
+              <span class="new-msg">1</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/men/1.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">kamil boarger</p>
+              <p>i will send the documents as soon...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">11:15</p>
+              <span class="new-msg">3</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/women/2.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">tamara shevchenko</p>
+              <p class="typing">typing...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">10:05</p>
+              <span class="new-msg">2</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/men/2.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">sam nelson</p>
+              <p>i suggest to start , i have...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">15:09</p>
+              <span class="new-msg">7</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/women/3.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">kristina kurzawa</p>
+              <p>we need to start a new reserch...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">14:09</p>
+              <span class="new-msg">1</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/men/3.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">jonas berger</p>
+              <p class="typing">typing...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">14:09</p>
+              <span class="new-msg">2</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/women/4.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">carolina nixon</p>
+              <p>i would like to introduce you to...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">14:09</p>
+              <span class="new-msg">3</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/men/4.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">patrick kluivert</p>
+              <p class="typing">typing...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">13:15</p>
+              <span class="new-msg">1</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/women/5.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">sonia</p>
+              <p>what a great work...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">11:15</p>
+              <span class="new-msg">4</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+          <div class="msg-holder">
+            <div class="ms-pa-1">
+              <img src="images/customers/clients/men/5.jpg" />
+            </div>
+            <div class="ms-pa-2">
+              <p class="masg-sender">ahmed adel</p>
+              <p>wow ! its amazing...</p>
+            </div>
+            <div class="ms-pa-3">
+              <p class="msg-time">10:15</p>
+              <span class="new-msg">5</span>
+            </div>
+          </div>
+          <!-- ........................ -->
+        </div>
+        <div class="show-more-5"><p>show more</p></div>
+      </section>
+      <!-- ending messages section -->
+      <!-- starting products section -->
+      <section class="products">
+        <h1>products</h1>
+        <p class="products-title">
+          enjoy shopping the best products and be unique by acquire it .
+        </p>
+        <div class="products-items">
+          <!-- ............................ -->
+          <div class="item">
+            <div class="product-img-holder-div">
+              <div class="item-top">
+                <img src="images/products/bag.jpg" />
+              </div>
+            </div>
+            <div class="item-bottom">
+              <div>
+                <p>nike bag</p>
+                <span class="prod-price">$50</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ...................... -->
+          <div class="item">
+            <div class="product-img-holder-div">
+              <div class="item-top">
+                <img src="images/products/cap.jpg" />
+              </div>
+            </div>
+            <div class="item-bottom">
+              <div>
+                <p>adidas cap</p>
+                <span class="prod-price">$15</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ...................... -->
+          <div class="item">
+            <div class="product-img-holder-div">
+              <div class="item-top">
+                <img src="images/products/shirt.png" />
+              </div>
+            </div>
+            <div class="item-bottom">
+              <div>
+                <p>adidas shirt</p>
+                <span class="prod-price">$33</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ...................... -->
+          <div class="item">
+            <div class="product-img-holder-div">
+              <div class="item-top">
+                <img src="images/products/shoe-1.jpg" />
+              </div>
+            </div>
+            <div class="item-bottom">
+              <div>
+                <p>nike shoes</p>
+                <span class="prod-price">$120</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ...................... -->
+          <div class="item">
+            <div class="product-img-holder-div">
+              <div class="item-top">
+                <img src="images/products/short.jpg" />
+              </div>
+            </div>
+            <div class="item-bottom">
+              <div>
+                <p>adidas short</p>
+                <span class="prod-price">$80</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ...................... -->
+          <div class="item">
+            <div class="product-img-holder-div">
+              <div class="item-top">
+                <img src="images/products/watch.jpg" />
+              </div>
+            </div>
+            <div class="item-bottom">
+              <div>
+                <p>adidas watch</p>
+                <span class="prod-price">$1000</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ...................... -->
+        </div>
+        <div class="show-more-6"><p>show more</p></div>
+      </section>
+      <!-- ending products section -->
+      <!-- starting sign up section -->
+      <section class="sign-up">
+        <div class="sign-up-title">
+          <h1>sign up</h1>
+          <p>welcome , please sign up your account.</p>
+        </div>
+        <form>
+          <div class="firAndlasName">
+            <div class="first-name-div">
+              <input
+                type="text"
+                placeholder="first name *"
+                required
+                class="first-name"
+              />
+              <img
+                src="images/form validation true&false/green.png"
+                class="first-name-green"
+              />
+              <img
+                src="images/form validation true&false/red.jpg"
+                class="first-name-red"
+              />
+            </div>
+            <div class="last-name-div">
+              <input
+                type="text"
+                placeholder="last name *"
+                required
+                class="last-name"
+              />
+              <img
+                src="images/form validation true&false/green.png"
+                class="last-name-green"
+              />
+              <img
+                src="images/form validation true&false/red.jpg"
+                class="last-name-red"
+              />
+            </div>
+          </div>
+          <div class="full-name-div">
+            <input
+              type="text"
+              placeholder="user name"
+              class="user-name"
+              required
+              minlength="10"
+              maxlength="30"
+            />
+            <img
+              src="images/form validation true&false/green.png"
+              class="full-name-green"
+            />
+            <img
+              src="images/form validation true&false/red.jpg"
+              class="full-name-red"
+            />
+          </div>
+          <div class="mail-div">
+            <input type="email" placeholder="email *" class="email" required />
+            <img
+              src="images/form validation true&false/green.png"
+              class="mail-green"
+            />
+            <img
+              src="images/form validation true&false/red.jpg"
+              class="mail-red"
+            />
+          </div>
+          <div class="pass-div">
+            <input
+              type="password"
+              placeholder="password *"
+              class="pass"
+              required
+              minlength="10"
+              maxlength="14"
+            />
+            <i class="fa-solid fa-eye-slash"></i>
+          </div>
+          <div class="confirm-pass-div">
+            <input
+              type="password"
+              placeholder="confirm password *"
+              class="con-pass"
+              required
+              minlength="10"
+              maxlength="14"
+            />
+            <i class="confirmation fa-solid fa-eye-slash"></i>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" id="agreement" required />
+            <label for="agreement">i agree with terms and conditions</label>
+          </div>
+          <div class="submitting">
+            <input type="submit" value="sign up" class="submit-info-btn" />
+            <div class="askingABAnotherAcc">
+              <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+          </div>
+          <div class="usageAndPrivacyLinks">
+            <a href="#" class="termsofuse">terms of use</a>
+            <a href="#" class="policy">privacy policy</a>
+          </div>
+        </form>
+      </section>
+      <!-- ending sign up section -->
+      <section class="right-side">
+        <div class="part-one">
+          <div class="sun-moon">
+            <i class="fa-solid fa-sun themeOn" title="Light Theme"></i>
+            <i class="fa-solid fa-moon" title="Dark Theme"></i>
+          </div>
+          <div class="admin">
+            <div class="admin-info">
+              <p>Hey , <span class="admin-name">Ahmed</span></p>
+              <p class="ad-word">admin</p>
+            </div>
+            <div class="admin-photo">
+              <img src="images/Avatar/admin.jpg" alt="" title="Admin" />
+            </div>
+          </div>
+        </div>
+        <div class="part-two">
+          <h1>recent updates</h1>
+          <div class="update-box">
+            <div class="avatar-1">
+              <img src="images/Avatar/1.jpg" alt="" />
+              <div>
+                <p>
+                  <span class="client">mike tyson</span>
+                  <span class="inc">received</span> his order of night lion tech
+                  GPS drone
+                </p>
+                <p class="time">2 minutes ago</p>
+              </div>
+            </div>
+            <!-- ............. -->
+            <div class="avatar-2">
+              <img src="images/Avatar/2.jpg" alt="" />
+              <div>
+                <p>
+                  <span class="client">diana ayi</span>
+                  <span class="dec">declined</span> her order of 2 DJI Air 2s
+                </p>
+                <p class="time">5 minutes ago</p>
+              </div>
+            </div>
+            <!-- .................... -->
+            <div class="avatar-3">
+              <img src="images/Avatar/3.jpg" alt="" />
+              <div>
+                <p>
+                  <span class="client">mandy roy</span>
+                  <span class="inc">received</span> her order of larvender kf
+                  102 drone
+                </p>
+                <p class="time">6 minutes ago</p>
+              </div>
+            </div>
+            <!-- .............. -->
+            <div class="avatar-4">
+              <img src="images/Avatar/4.jpg" alt="" />
+              <div>
+                <p>
+                  <span class="client">arina gomiz</span>
+                  <span class="dec">declined</span> her order of Gps 4k Drone
+                </p>
+                <p class="time">9 minutes ago</p>
+              </div>
+            </div>
+            <!-- .............. -->
+          </div>
+        </div>
+        <div class="part-3">
+          <h1>sales analytics</h1>
+          <div class="analysis">
+            <div class="analytics-1">
+              <span><i class="fa-solid fa-bag-shopping"></i></span>
+              <span>
+                <p class="type-of-process">online orders</p>
+                <p class="time-of-process">last 24 hours</p>
+              </span>
+              <span class="inc">+39%</span>
+              <span class="theNum">3849</span>
+            </div>
+            <!-- ............... -->
+            <div class="analytics-2">
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+              <span>
+                <p class="type-of-process">offline orders</p>
+                <p class="time-of-process">last 24 hours</p>
+              </span>
+              <span class="dec">-17%</span>
+              <span class="theNum">1100</span>
+            </div>
+            <!-- ............... -->
+            <div class="analytics-3">
+              <span><i class="fa-solid fa-user"></i></span>
+              <span>
+                <p class="type-of-process">new customer</p>
+                <p class="time-of-process">last 24 hours</p>
+              </span>
+              <span class="inc">+25%</span>
+              <span class="theNum">849</span>
+            </div>
+            <!-- ............... -->
+          </div>
+        </div>
+        <span class="add-p">+ add product</span>
+      </section>
+    </div>
+    <!--                       ICONS                         -->
+    <!-- <i class="fa-solid fa-bars"></i>        BURGER ICON -->
+    <!-- <i class="fa-solid fa-xmark"></i>  CLOSE MARK-->
+    <script src="index.js"></script>
+  </body>
+</html>

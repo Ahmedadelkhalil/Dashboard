@@ -1,0 +1,108 @@
+.products {
+  width: 750px;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+  &.active-screen {
+    display: block;
+    opacity: 1;
+  }
+  h1 {
+    width: 100px;
+    margin: 29px 10px 0px 10px;
+  }
+  .products-title {
+    text-transform: capitalize;
+    font-family: tahoma;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .products-items {
+    width: 100%;
+    height: 650px;
+    margin-top: 30px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .item {
+    width: 200px;
+    @extend %display;
+    flex-direction: column;
+    .item-top img {
+      width: 200px;
+      height: 250px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    .product-img-holder-div {
+      width: 200px;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    .item-top {
+      transition: transform 0.5s ease;
+      -webkit-transition: transform 0.5s ease;
+      -moz-transition: transform 0.5s ease;
+      -ms-transition: transform 0.5s ease;
+      -o-transition: transform 0.5s ease;
+    }
+    .item-top:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+    }
+    .item-bottom {
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      .prod-price {
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      p {
+        margin: 0;
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-family: tahoma;
+        font-size: 15px;
+        color: $color-10;
+      }
+      .fa-cart-shopping {
+        cursor: pointer;
+        font-weight: bolder;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        font-size: 20px;
+        &:hover {
+          color: $color-1;
+        }
+      }
+    }
+  }
+  .show-more-6 {
+    width: 100%;
+    @extend %display;
+    font-weight: bolder;
+    color: $color-1;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+}

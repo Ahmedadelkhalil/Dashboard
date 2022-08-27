@@ -1,0 +1,160 @@
+.container.darkon {
+  background-color: $color-main;
+  aside {
+    background-color: $color-main;
+  }
+  .logo-name {
+    color: $color-5;
+  }
+  .op-holder,
+  h1,
+  .admin-info,
+  .fa-sun {
+    color: $color-7;
+  }
+  .num-msg,
+  .new-feature {
+    color: $color-main;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    background-color: $color-sub;
+  }
+  %icons {
+    color: $color-main;
+  }
+  .in-circle {
+    background-color: $color-main;
+    color: $color-7;
+  }
+  .dashboard .txt {
+    color: $color-5;
+  }
+  .last-update {
+    color: #d9835a;
+  }
+  .table table {
+    background-color: $color-sub;
+    th {
+      color: $color-5;
+    }
+  }
+  .update-box {
+    background-color: $color-sub;
+  }
+  .analytics-1,
+  .analytics-2,
+  .analytics-3 {
+    background-color: $color-sub;
+  }
+  .analytics-main-title {
+    color: $color-7;
+  }
+  .type-of-process {
+    color: $color-7;
+  }
+  .theNum {
+    color: $color-7;
+  }
+  .customers-title {
+    p {
+      font-weight: bold;
+      color: $color-7;
+      font-size: 13px;
+      &::after {
+        bottom: -14px;
+      }
+    }
+    & .com-num {
+      padding: 5px;
+      margin-left: 5px;
+      color: $color-main;
+      font-weight: bold;
+    }
+  }
+  .table-2 table {
+    background-color: $color-sub;
+    th {
+      color: $color-1;
+      font-weight: bolder;
+    }
+    td {
+      color: $color-7;
+      font-weight: bolder;
+    }
+  }
+  .order {
+    .order-des {
+      color: $color-7;
+    }
+    ul li {
+      color: $color-7;
+      &.active-order {
+        color: $color-1;
+      }
+    }
+    table {
+      background-color: $color-sub;
+      th {
+        color: $color-1;
+      }
+      td {
+        color: $color-7;
+      }
+    }
+  }
+  .ana-inside-box {
+    background-color: $color-sub !important;
+    .ana-num-value-1,
+    .ana-num-value-2,
+    .ana-num-value-3,
+    .ana-num-value-4 {
+      color: $color-7;
+    }
+  }
+  .chart-dotsAndtitle {
+    p {
+      color: $color-7;
+    }
+  }
+  .ana-progress-bar-one,
+  .ana-progress-bar-two {
+    background-color: $color-sub !important;
+    p {
+      color: $color-7;
+    }
+  }
+  .ana-inside-circle-1,
+  .ana-inside-circle-2 {
+    background-color: $color-sub !important;
+  }
+  .messages {
+    .msg-holder {
+      background-color: $color-sub;
+      box-shadow: 0px 0px 10px white;
+    }
+    .masg-sender {
+      color: $color-7;
+    }
+  }
+  .products-title {
+    color: $color-7;
+  }
+  .item-bottom {
+    color: $color-7;
+    p {
+      color: $color-1 !important;
+    }
+  }
+  .sign-up {
+    background-color: $color-sub;
+    h1 {
+      color: $color-1 !important;
+    }
+    p,
+    label {
+      color: $color-7;
+    }
+  }
+}

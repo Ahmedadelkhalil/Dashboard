@@ -1,0 +1,200 @@
+.sign-up {
+  width: 750px;
+  height: 100vh;
+  display: none;
+  opacity: 0;
+  &.active-screen {
+    display: block;
+    opacity: 1;
+  }
+  h1 {
+    color: $color-1;
+  }
+  .sign-up-title {
+    margin: 29px 10px 0px 10px;
+    width: 100%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 25px !important;
+      font-family: tahoma;
+    }
+    p {
+      margin: 0;
+      font: {
+        weight: bolder;
+        family: tahoma;
+      }
+      margin-top: 10px;
+    }
+  }
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    img {
+      width: 22px;
+      height: 22px;
+      position: absolute;
+    }
+    .firAndlasName {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .first-name,
+      .last-name {
+        width: 200px;
+        height: 25px;
+        margin: 5px;
+        border: none;
+        border-top-color: currentcolor;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px gray;
+        text-transform: capitalize;
+      }
+      .first-name:focus,
+      .last-name:focus {
+        outline: none;
+      }
+    }
+    .user-name,
+    .email,
+    .pass,
+    .con-pass {
+      width: 425px;
+      height: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 5px;
+      border: none;
+      text-transform: capitalize;
+      box-shadow: 0px 2px 5px gray;
+      &:focus {
+        outline: none;
+      }
+    }
+    .agreement {
+      width: 425px;
+      height: 25px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
+      text-transform: capitalize;
+      #agreement {
+        margin-right: 10px;
+      }
+    }
+    .submitting {
+      width: 425px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      .submit-info-btn {
+        width: 150px;
+        text-transform: capitalize;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: $color-1;
+        color: $color-7;
+      }
+      .askingABAnotherAcc {
+        margin-top: 10px;
+      }
+    }
+    .usageAndPrivacyLinks {
+      margin-top: 20px;
+      .termsofuse,
+      .policy {
+        margin: 2px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .first-name-div {
+    position: relative;
+    .first-name-green {
+      right: 10px;
+      top: 10px;
+      display: none;
+    }
+    .first-name-red {
+      right: 10px;
+      top: 10px;
+      display: none;
+    }
+  }
+  .last-name-div {
+    position: relative;
+    .last-name-green {
+      right: 8px;
+      top: 10px;
+      display: none;
+    }
+    .last-name-red {
+      right: 8px;
+      top: 10px;
+      display: none;
+    }
+  }
+  .full-name-div {
+    position: relative;
+    .full-name-green {
+      right: 5px;
+      top: 15px;
+      display: none;
+    }
+    .full-name-red {
+      right: 5px;
+      top: 15px;
+      display: none;
+    }
+  }
+  .mail-div {
+    position: relative;
+    .mail-green {
+      right: 5px;
+      top: 16px;
+      display: none;
+    }
+    .mail-red {
+      right: 5px;
+      top: 16px;
+      display: none;
+    }
+  }
+  .pass-div {
+    position: relative;
+    .fa-eye,
+    .fa-eye-slash {
+      position: absolute;
+      right: 7px;
+      top: 20px;
+      cursor: pointer;
+    }
+  }
+  .confirm-pass-div {
+    position: relative;
+    .fa-eye-slash,
+    .fa-eye {
+      position: absolute;
+      right: 7px;
+      top: 20px;
+      cursor: pointer;
+    }
+  }
+}

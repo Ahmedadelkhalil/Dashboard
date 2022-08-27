@@ -1,0 +1,202 @@
+.dashboard {
+  width: 750px;
+  height: 100vh;
+  margin-right: 0px;
+  display: none;
+  opacity: 0;
+  &.active-screen {
+    display: block;
+    opacity: 1;
+  }
+  h1 {
+    text-transform: capitalize;
+    margin-left: 10px;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    padding: 10px;
+    width: 220px;
+    background-color: $color-5;
+    border-radius: 10px;
+  }
+  .cards {
+    width: 730px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-1,
+  .card-2 {
+    margin-right: 10px;
+  }
+  %icons {
+    width: 20px;
+    height: 20px;
+    @extend %display;
+    color: $color-5;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .fa-chart-simple {
+    @extend %icons;
+    background-color: $color-1;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .fa-sack-dollar {
+    @extend %icons;
+    background-color: $color-2;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .fa-hand-holding-dollar {
+    @extend %icons;
+    background-color: $color-3;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .mid-card {
+    display: flex;
+    align-items: center;
+  }
+  .txt {
+    width: 110px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 17px;
+    margin-right: 30px;
+    .money-gained,
+    .loss,
+    .gross {
+      font-size: 25px;
+    }
+  }
+  .circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .progress-1 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: conic-gradient($color-1 288deg, lightgray 0deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .progress-2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: conic-gradient($color-2 223.5deg, lightgray 0deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .progress-3 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: conic-gradient($color-3 159deg, lightgray 0deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .in-circle {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: $color-6;
+  }
+  .last-update {
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 12px;
+    color: $color-6;
+  }
+  table {
+    width: 730px;
+    margin: 20px auto 0px auto;
+    background-color: $color-5;
+    border-spacing: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 10px;
+    tr {
+      position: relative;
+    }
+    .line::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $color-6;
+      bottom: -20px;
+      left: 0;
+    }
+    th {
+      font-family: tahoma;
+      font-weight: bolder;
+      font-size: 15px;
+      color: black;
+    }
+    .pending {
+      color: $color-4;
+      font-weight: bolder;
+    }
+    .declined {
+      color: $color-2;
+      font-weight: bolder;
+    }
+    .delivered {
+      color: $color-1;
+      font-weight: bolder;
+    }
+    .details {
+      color: $color-1;
+      font-weight: bolder;
+    }
+    td {
+      font: {
+        family: Tahoma;
+        size: 13px;
+        weight: bold;
+      }
+      color: $color-11;
+    }
+  }
+  .show-more {
+    width: 730px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: $color-1;
+  }
+}
