@@ -1,6 +1,13 @@
-@media screen and (max-width: 500px) {
+// .............................................. SMART PHONE RESPONSIVENESS
+@media screen and (max-width: 800px) {
+  .SmartPhoneFixedTopBar {
+    display: flex !important;
+  }
+  .mobile-aside {
+    display: block !important;
+  }
   .desktop-aside {
-    display: none;
+    display: none !important;
   }
   .not-in-smart-phone-design {
     display: none !important;
@@ -41,7 +48,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 375px;
+      width: 375px !important;
       flex-direction: column;
       .show-more {
         width: 375px;
@@ -82,7 +89,7 @@
   .right-side {
     height: 103vh;
     .part-one {
-      display: none;
+      display: none !important;
     }
     .part-two {
       width: 375px;
@@ -124,36 +131,38 @@
     z-index: 100;
   }
   .mobilethemeandadmin {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     width: 90px;
-  }
-  .sun-moon-mobile {
-    .fa-sun,
-    .fa-moon {
-      font-size: 15px;
-      padding: 5px;
-      border-radius: 10px;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      -ms-border-radius: 10px;
-      -o-border-radius: 10px;
-      cursor: pointer;
+    .sun-moon-mobile {
+      display: block !important;
+      .fa-sun,
+      .fa-moon {
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        cursor: pointer;
+      }
+      .fa-sun.themeOn,
+      .fa-moon.themeOn {
+        color: $color-5;
+        background-color: $color-1;
+      }
     }
-    .fa-sun.themeOn,
-    .fa-moon.themeOn {
-      color: $color-5;
-      background-color: $color-1;
-    }
   }
+
   .mobile-aside {
     width: 200px;
     position: fixed;
-    margin-top: 54px;
+    margin-top: 0px;
     z-index: 9999;
     background-color: #f2f5ec;
-    height: 90vh;
+    height: 100vh;
     transition: all 0.4s ease;
     transform: translateX(-200px);
     -webkit-transform: translateX(-200px);
@@ -381,6 +390,78 @@
     }
     & form .agreement {
       width: 300px;
+    }
+  }
+}
+
+// .............................................. IPAD RESPONSIVENESS
+
+@media screen and (max-width: 1000px) {
+  .SmartPhoneFixedTopBar,
+  .mobile-aside {
+    display: none;
+  }
+  .desktop-aside {
+    display: block;
+    p {
+      display: none;
+    }
+    .left-options .op-holder:not(:nth-child(10)) {
+      margin-bottom: 26px;
+    }
+    .left-options .fa-solid {
+      margin-right: 0;
+    }
+    .left-options .op-holder:nth-child(10) {
+      width: 100px;
+      bottom: 30px;
+    }
+    .logo {
+      img {
+        width: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
+    .logo-name {
+      font-size: 15px;
+    }
+  }
+  .dashboard {
+    h1 {
+      width: 630px;
+    }
+    & .card-1,
+    & .card-2,
+    & .card-3 {
+      width: 180px;
+    }
+    & .txt {
+      font-size: 13px;
+    }
+    .table {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 630px;
+      flex-direction: column;
+      table {
+        width: 530px;
+        border-spacing: 10px;
+        margin-top: 0;
+        th {
+          font-size: 13px;
+        }
+        .line::after {
+          bottom: -8px;
+        }
+      }
+    }
+    .show-more {
+      width: 630px;
     }
   }
 }

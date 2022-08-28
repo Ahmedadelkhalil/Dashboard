@@ -35,11 +35,16 @@ window.onload = function () {
     container.classList.add("darkon");
     lightTheme.classList.remove("themeOn");
     darkTheme.classList.add("themeOn");
+    LSLightTheme.classList.remove("themeOn");
+    LSDarkTheme.classList.add("themeOn");
   } else if (window.localStorage.getItem("theme") === "container") {
     container.classList.remove("darkon");
     lightTheme.classList.add("themeOn");
     darkTheme.classList.remove("themeOn");
+    LSLightTheme.classList.add("themeOn");
+    LSDarkTheme.classList.remove("themeOn");
   }
+
   if (window.localStorage.getItem("left options") === "dashboard") {
     document.querySelector("#middle-Two").classList.remove("active");
     document.querySelector("#middle-Three").classList.remove("active");
@@ -148,6 +153,119 @@ window.onload = function () {
     document.querySelector(".products").classList.remove("active-screen");
     document.querySelector(".sign-up").classList.add("active-screen");
   }
+
+  //......................................................... LEFT ICONS LARGE SCREENS LOCAL STORAGE
+
+  if (window.localStorage.getItem("left options") === "dashboard") {
+    document.querySelector("#middle-TwoLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.remove("active");
+    document.querySelector("#middle-OneLS").classList.add("active");
+    document.querySelector(".customers").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.remove("active-screen");
+    document.querySelector(".order").classList.remove("active-screen");
+    document.querySelector(".messages").classList.remove("active-screen");
+    document.querySelector(".products").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.remove("active-screen");
+    document.querySelector(".dashboard").classList.add("active-screen");
+  } else if (window.localStorage.getItem("left options") === "customers") {
+    document.querySelector("#middle-OneLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.remove("active");
+    document.querySelector("#middle-TwoLS").classList.add("active");
+    document.querySelector(".dashboard").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.remove("active-screen");
+    document.querySelector(".order").classList.remove("active-screen");
+    document.querySelector(".messages").classList.remove("active-screen");
+    document.querySelector(".products").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.remove("active-screen");
+    document.querySelector(".customers").classList.add("active-screen");
+  } else if (window.localStorage.getItem("left options") === "order") {
+    document.querySelector("#middle-OneLS").classList.remove("active");
+    document.querySelector("#middle-TwoLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.add("active");
+    document.querySelector(".dashboard").classList.remove("active-screen");
+    document.querySelector(".customers").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.remove("active-screen");
+    document.querySelector(".messages").classList.remove("active-screen");
+    document.querySelector(".products").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.remove("active-screen");
+    document.querySelector(".order").classList.add("active-screen");
+    document.querySelector(".search-btn").focus();
+  } else if (window.localStorage.getItem("left options") === "analytics") {
+    document.querySelector("#middle-OneLS").classList.remove("active");
+    document.querySelector("#middle-TwoLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.add("active");
+    document.querySelector(".dashboard").classList.remove("active-screen");
+    document.querySelector(".customers").classList.remove("active-screen");
+    document.querySelector(".order").classList.remove("active-screen");
+    document.querySelector(".products").classList.remove("active-screen");
+    document.querySelector(".messages").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.add("active-screen");
+  } else if (window.localStorage.getItem("left options") === "messages") {
+    document.querySelector("#middle-OneLS").classList.remove("active");
+    document.querySelector("#middle-TwoLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.add("active");
+    document.querySelector(".dashboard").classList.remove("active-screen");
+    document.querySelector(".customers").classList.remove("active-screen");
+    document.querySelector(".order").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.remove("active-screen");
+    document.querySelector(".products").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.remove("active-screen");
+    document.querySelector(".messages").classList.add("active-screen");
+    document.querySelector(".input-msg").focus();
+  } else if (window.localStorage.getItem("left options") === "products") {
+    document.querySelector("#middle-OneLS").classList.remove("active");
+    document.querySelector("#middle-TwoLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.add("active");
+    document.querySelector(".dashboard").classList.remove("active-screen");
+    document.querySelector(".customers").classList.remove("active-screen");
+    document.querySelector(".order").classList.remove("active-screen");
+    document.querySelector(".messages").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.remove("active-screen");
+    document.querySelector(".products").classList.add("active-screen");
+  } else if (window.localStorage.getItem("left options") === "SignUp") {
+    document.querySelector("#middle-OneLS").classList.remove("active");
+    document.querySelector("#middle-TwoLS").classList.remove("active");
+    document.querySelector("#middle-ThreeLS").classList.remove("active");
+    document.querySelector("#middle-FiveLS").classList.remove("active");
+    document.querySelector("#middle-FourLS").classList.remove("active");
+    document.querySelector("#middle-SixLS").classList.remove("active");
+    document.querySelector("#middle-SevenLS").classList.add("active");
+    document.querySelector(".dashboard").classList.remove("active-screen");
+    document.querySelector(".customers").classList.remove("active-screen");
+    document.querySelector(".order").classList.remove("active-screen");
+    document.querySelector(".messages").classList.remove("active-screen");
+    document.querySelector(".analytics").classList.remove("active-screen");
+    document.querySelector(".products").classList.remove("active-screen");
+    document.querySelector(".sign-up").classList.add("active-screen");
+  }
+
+  //.................................................................................................
 
   if (window.sessionStorage.getItem("First Name")) {
     firstName.value = window.sessionStorage.getItem("First Name");
@@ -390,7 +508,115 @@ leftIcons.forEach((icon) => {
   });
 });
 
-//.................................................
+//................................................................... LEFT ICONS LARGE SCREEN
+
+let leftIconsLS = document.querySelectorAll(".op-holderLS");
+
+leftIconsLS.forEach((iconLS) => {
+  iconLS.addEventListener("click", (e) => {
+    leftIconsLS.forEach((iconLS) => {
+      iconLS.classList.remove("active");
+    });
+    if (e.currentTarget.getAttribute("data-directcu")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".dashboard").classList.remove("active-screen");
+      document.querySelector(".order").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.remove("active-screen");
+      document.querySelector(".messages").classList.remove("active-screen");
+      document.querySelector(".products").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.remove("active-screen");
+      document.querySelector(".customers").classList.add("active-screen");
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-directcu")
+      );
+    } else if (e.currentTarget.getAttribute("data-directdb")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".customers").classList.remove("active-screen");
+      document.querySelector(".order").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.remove("active-screen");
+      document.querySelector(".messages").classList.remove("active-screen");
+      document.querySelector(".products").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.remove("active-screen");
+      document.querySelector(".dashboard").classList.add("active-screen");
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-directdb")
+      );
+      window.location.reload();
+    } else if (e.currentTarget.getAttribute("data-director")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".dashboard").classList.remove("active-screen");
+      document.querySelector(".customers").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.remove("active-screen");
+      document.querySelector(".messages").classList.remove("active-screen");
+      document.querySelector(".products").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.remove("active-screen");
+      document.querySelector(".order").classList.add("active-screen");
+      document.querySelector(".search-btn").focus();
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-director")
+      );
+    } else if (e.currentTarget.getAttribute("data-directana")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".dashboard").classList.remove("active-screen");
+      document.querySelector(".customers").classList.remove("active-screen");
+      document.querySelector(".order").classList.remove("active-screen");
+      document.querySelector(".messages").classList.remove("active-screen");
+      document.querySelector(".products").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.add("active-screen");
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-directana")
+      );
+      window.location.reload();
+    } else if (e.currentTarget.getAttribute("data-directmsg")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".dashboard").classList.remove("active-screen");
+      document.querySelector(".customers").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.remove("active-screen");
+      document.querySelector(".order").classList.remove("active-screen");
+      document.querySelector(".products").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.remove("active-screen");
+      document.querySelector(".messages").classList.add("active-screen");
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-directmsg")
+      );
+      document.querySelector(".input-msg").focus();
+    } else if (e.currentTarget.getAttribute("data-directpro")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".dashboard").classList.remove("active-screen");
+      document.querySelector(".customers").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.remove("active-screen");
+      document.querySelector(".messages").classList.remove("active-screen");
+      document.querySelector(".order").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.remove("active-screen");
+      document.querySelector(".products").classList.add("active-screen");
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-directpro")
+      );
+    } else if (e.currentTarget.getAttribute("data-directsign")) {
+      e.currentTarget.classList.add("active");
+      document.querySelector(".dashboard").classList.remove("active-screen");
+      document.querySelector(".customers").classList.remove("active-screen");
+      document.querySelector(".analytics").classList.remove("active-screen");
+      document.querySelector(".messages").classList.remove("active-screen");
+      document.querySelector(".order").classList.remove("active-screen");
+      document.querySelector(".products").classList.remove("active-screen");
+      document.querySelector(".sign-up").classList.add("active-screen");
+      window.localStorage.setItem(
+        "left options",
+        e.currentTarget.getAttribute("data-directsign")
+      );
+    }
+  });
+});
+
+//................................................. SMART PHONES THEME
 
 let lightTheme = document.querySelector(".fa-sun");
 let darkTheme = document.querySelector(".fa-moon");
@@ -419,6 +645,23 @@ lightTheme.addEventListener("click", () => {
     "mobile aside menu theme",
     document.querySelector(".mobile-aside").classList
   );
+});
+//................................................................ LARGE SCREEN THEME
+let LSLightTheme = document.querySelector(".LScLightMode");
+let LSDarkTheme = document.querySelector(".LScDarkMode");
+
+LSDarkTheme.addEventListener("click", () => {
+  container.classList.add("darkon");
+  LSLightTheme.classList.remove("themeOn");
+  LSDarkTheme.classList.add("themeOn");
+  window.localStorage.setItem("theme", container.classList);
+});
+
+LSLightTheme.addEventListener("click", () => {
+  container.classList.remove("darkon");
+  LSLightTheme.classList.add("themeOn");
+  LSDarkTheme.classList.remove("themeOn");
+  window.localStorage.setItem("theme", container.classList);
 });
 
 //................................................................

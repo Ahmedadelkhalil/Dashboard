@@ -1856,9 +1856,15 @@ aside {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
+  .SmartPhoneFixedTopBar {
+    display: flex !important;
+  }
+  .mobile-aside {
+    display: block !important;
+  }
   .desktop-aside {
-    display: none;
+    display: none !important;
   }
   .not-in-smart-phone-design {
     display: none !important;
@@ -1900,7 +1906,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 375px;
+    width: 375px !important;
     flex-direction: column;
   }
   .dashboard .table .show-more {
@@ -1939,7 +1945,7 @@ aside {
     height: 103vh;
   }
   .right-side .part-one {
-    display: none;
+    display: none !important;
   }
   .right-side .part-two {
     width: 375px;
@@ -1980,13 +1986,16 @@ aside {
     z-index: 100;
   }
   .mobilethemeandadmin {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     width: 90px;
   }
-  .sun-moon-mobile .fa-sun,
-.sun-moon-mobile .fa-moon {
+  .mobilethemeandadmin .sun-moon-mobile {
+    display: block !important;
+  }
+  .mobilethemeandadmin .sun-moon-mobile .fa-sun,
+.mobilethemeandadmin .sun-moon-mobile .fa-moon {
     font-size: 15px;
     padding: 5px;
     border-radius: 10px;
@@ -1996,18 +2005,18 @@ aside {
     -o-border-radius: 10px;
     cursor: pointer;
   }
-  .sun-moon-mobile .fa-sun.themeOn,
-.sun-moon-mobile .fa-moon.themeOn {
+  .mobilethemeandadmin .sun-moon-mobile .fa-sun.themeOn,
+.mobilethemeandadmin .sun-moon-mobile .fa-moon.themeOn {
     color: #fff;
     background-color: #7380ec;
   }
   .mobile-aside {
     width: 200px;
     position: fixed;
-    margin-top: 54px;
+    margin-top: 0px;
     z-index: 9999;
     background-color: #f2f5ec;
-    height: 90vh;
+    height: 100vh;
     transition: all 0.4s ease;
     transform: translateX(-200px);
     -webkit-transform: translateX(-200px);
@@ -2214,5 +2223,68 @@ aside {
   }
   .sign-up form .agreement {
     width: 300px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .SmartPhoneFixedTopBar,
+.mobile-aside {
+    display: none;
+  }
+  .desktop-aside {
+    display: block;
+  }
+  .desktop-aside p {
+    display: none;
+  }
+  .desktop-aside .left-options .op-holder:not(:nth-child(10)) {
+    margin-bottom: 26px;
+  }
+  .desktop-aside .left-options .fa-solid {
+    margin-right: 0;
+  }
+  .desktop-aside .left-options .op-holder:nth-child(10) {
+    width: 100px;
+    bottom: 30px;
+  }
+  .desktop-aside .logo img {
+    width: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .desktop-aside .logo-name {
+    font-size: 15px;
+  }
+  .dashboard h1 {
+    width: 630px;
+  }
+  .dashboard .card-1, .dashboard .card-2, .dashboard .card-3 {
+    width: 180px;
+  }
+  .dashboard .txt {
+    font-size: 13px;
+  }
+  .dashboard .table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 630px;
+    flex-direction: column;
+  }
+  .dashboard .table table {
+    width: 530px;
+    border-spacing: 10px;
+    margin-top: 0;
+  }
+  .dashboard .table table th {
+    font-size: 13px;
+  }
+  .dashboard .table table .line::after {
+    bottom: -8px;
+  }
+  .dashboard .show-more {
+    width: 630px;
   }
 }/*# sourceMappingURL=index.css.map */
