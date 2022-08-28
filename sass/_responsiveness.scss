@@ -253,7 +253,7 @@
     }
   }
   .customers {
-    height: 117vh;
+    height: 115vh;
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
@@ -261,7 +261,7 @@
   }
   .order {
     width: 360px;
-    height: 140vh;
+    height: 135vh;
     h1 {
       margin-top: 70px;
       margin-left: 16px;
@@ -292,6 +292,43 @@
         width: 360px;
         font-size: 9px;
       }
+    }
+  }
+  .analytics {
+    width: 350px;
+    height: 220vh;
+    .h-one-analytics {
+      margin-top: 70px;
+    }
+    .analytics-boxes {
+      flex-direction: column;
+    }
+    .analytics-chart {
+      img {
+        width: 300px;
+        height: 230px;
+      }
+      .chart-dotsAndtitle {
+        width: 200px;
+      }
+    }
+    .analytics-progress-bars {
+      flex-direction: column;
+    }
+  }
+  .messages {
+    width: 350px;
+    height: 140vh;
+    h1 {
+      margin-top: 70px;
+    }
+    .in-msg-search {
+      .input-msg {
+        width: 260px;
+      }
+    }
+    .msg-holder {
+      width: 300px;
     }
   }
 }

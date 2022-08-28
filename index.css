@@ -2098,7 +2098,7 @@ aside {
     height: 20px;
   }
   .customers {
-    height: 117vh;
+    height: 115vh;
   }
   .customers .customers-title {
     margin-top: 80px;
@@ -2106,7 +2106,7 @@ aside {
   }
   .order {
     width: 360px;
-    height: 140vh;
+    height: 135vh;
   }
   .order h1 {
     margin-top: 70px;
@@ -2134,5 +2134,38 @@ aside {
   .order .table-3 table {
     width: 360px;
     font-size: 9px;
+  }
+  .analytics {
+    width: 350px;
+    height: 220vh;
+  }
+  .analytics .h-one-analytics {
+    margin-top: 70px;
+  }
+  .analytics .analytics-boxes {
+    flex-direction: column;
+  }
+  .analytics .analytics-chart img {
+    width: 300px;
+    height: 230px;
+  }
+  .analytics .analytics-chart .chart-dotsAndtitle {
+    width: 200px;
+  }
+  .analytics .analytics-progress-bars {
+    flex-direction: column;
+  }
+  .messages {
+    width: 350px;
+    height: 140vh;
+  }
+  .messages h1 {
+    margin-top: 70px;
+  }
+  .messages .in-msg-search .input-msg {
+    width: 260px;
+  }
+  .messages .msg-holder {
+    width: 300px;
   }
 }/*# sourceMappingURL=index.css.map */
