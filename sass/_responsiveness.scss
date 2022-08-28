@@ -261,7 +261,7 @@
   }
   .order {
     width: 360px;
-    height: 133vh;
+    height: 130vh;
     h1 {
       margin-top: 70px;
       margin-left: 16px;
@@ -275,6 +275,10 @@
       margin-left: 10px;
       font-size: 9px;
 
+      &::after {
+        width: 330px;
+      }
+
       li {
         margin: 7px;
 
@@ -286,6 +290,12 @@
     .s-part {
       margin-top: 20px;
       width: 330px;
+      .search-btn {
+        height: 35px !important;
+      }
+      .fa-magnifying-glass {
+        top: 9px;
+      }
     }
     .table-3 {
       table {
@@ -320,7 +330,7 @@
     width: 350px;
     height: 134vh;
     h1 {
-      margin-top: 70px;
+      margin-top: 70px !important;
     }
     .in-msg-search {
       .input-msg {
@@ -333,7 +343,7 @@
   }
   .products {
     width: 350px;
-    height: 310vh;
+    height: 305vh;
     h1 {
       margin-top: 70px;
     }
