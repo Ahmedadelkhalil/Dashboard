@@ -1872,15 +1872,17 @@ aside {
   }
   .dashboard {
     width: 375px;
-    height: 170vh;
+    height: 175vh;
   }
   .dashboard .h-one-dashboard {
     width: 375px;
     margin-top: 70px;
+    margin-left: 20px;
   }
   .dashboard .h-one-recentorder {
     width: 375px;
     margin: 20px 10px;
+    margin-left: 20px;
   }
   .dashboard .cards {
     width: 375px;
@@ -1934,7 +1936,7 @@ aside {
     cursor: pointer;
   }
   .right-side {
-    height: 100vh;
+    height: 105vh;
   }
   .right-side .part-one {
     display: none;
@@ -2014,6 +2016,9 @@ aside {
     -moz-transform: translateX(-200px);
     -ms-transform: translateX(-200px);
     -o-transform: translateX(-200px);
+  }
+  .mobile-aside .left-options p {
+    font-size: 12px;
   }
   .mobile-aside.light-mode {
     background-color: #f2f5ec;
@@ -2095,7 +2100,7 @@ aside {
     height: 20px;
   }
   .customers {
-    height: 115vh;
+    height: 120vh;
   }
   .customers .customers-title {
     margin-top: 80px;

@@ -14,14 +14,16 @@
   }
   .dashboard {
     width: 375px;
-    height: 170vh;
+    height: 175vh;
     .h-one-dashboard {
       width: 375px;
       margin-top: 70px;
+      margin-left: 20px;
     }
     .h-one-recentorder {
       width: 375px;
       margin: 20px 10px;
+      margin-left: 20px;
     }
     .cards {
       width: 375px;
@@ -78,7 +80,7 @@
     }
   }
   .right-side {
-    height: 100vh;
+    height: 105vh;
     .part-one {
       display: none;
     }
@@ -160,6 +162,12 @@
     -moz-transform: translateX(-200px);
     -ms-transform: translateX(-200px);
     -o-transform: translateX(-200px);
+
+    .left-options {
+      p {
+        font-size: 12px;
+      }
+    }
 
     &.light-mode {
       background-color: #f2f5ec;
@@ -247,7 +255,7 @@
     }
   }
   .customers {
-    height: 115vh;
+    height: 120vh;
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
