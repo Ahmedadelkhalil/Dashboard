@@ -2098,7 +2098,7 @@ aside {
     height: 20px;
   }
   .customers {
-    height: 115vh;
+    height: 114vh;
   }
   .customers .customers-title {
     margin-top: 80px;
@@ -2106,7 +2106,7 @@ aside {
   }
   .order {
     width: 360px;
-    height: 135vh;
+    height: 133vh;
   }
   .order h1 {
     margin-top: 70px;
@@ -2137,7 +2137,7 @@ aside {
   }
   .analytics {
     width: 350px;
-    height: 220vh;
+    height: 210vh;
   }
   .analytics .h-one-analytics {
     margin-top: 70px;
@@ -2157,7 +2157,7 @@ aside {
   }
   .messages {
     width: 350px;
-    height: 140vh;
+    height: 134vh;
   }
   .messages h1 {
     margin-top: 70px;
@@ -2166,6 +2166,44 @@ aside {
     width: 260px;
   }
   .messages .msg-holder {
+    width: 300px;
+  }
+  .products {
+    width: 350px;
+    height: 310vh;
+  }
+  .products h1 {
+    margin-top: 70px;
+  }
+  .products .products-title {
+    font-size: 14px;
+  }
+  .products .products-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .products .item {
+    width: 350px;
+  }
+  .sign-up {
+    width: 350px;
+  }
+  .sign-up h1 {
+    width: 100px;
+  }
+  .sign-up .sign-up-title {
+    margin-top: 70px;
+  }
+  .sign-up .sign-up-title p {
+    font-size: 14px;
+  }
+  .sign-up form .firAndlasName .first-name, .sign-up form .firAndlasName .last-name {
+    width: 140px;
+  }
+  .sign-up form .user-name, .sign-up form .email, .sign-up form .pass, .sign-up form .con-pass {
+    width: 300px;
+  }
+  .sign-up form .agreement {
     width: 300px;
   }
 }/*# sourceMappingURL=index.css.map */

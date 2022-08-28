@@ -253,7 +253,7 @@
     }
   }
   .customers {
-    height: 115vh;
+    height: 114vh;
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
@@ -261,7 +261,7 @@
   }
   .order {
     width: 360px;
-    height: 135vh;
+    height: 133vh;
     h1 {
       margin-top: 70px;
       margin-left: 16px;
@@ -296,7 +296,7 @@
   }
   .analytics {
     width: 350px;
-    height: 220vh;
+    height: 210vh;
     .h-one-analytics {
       margin-top: 70px;
     }
@@ -318,7 +318,7 @@
   }
   .messages {
     width: 350px;
-    height: 140vh;
+    height: 134vh;
     h1 {
       margin-top: 70px;
     }
@@ -328,6 +328,48 @@
       }
     }
     .msg-holder {
+      width: 300px;
+    }
+  }
+  .products {
+    width: 350px;
+    height: 310vh;
+    h1 {
+      margin-top: 70px;
+    }
+    .products-title {
+      font-size: 14px;
+    }
+    .products-items {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .item {
+      width: 350px;
+    }
+  }
+  .sign-up {
+    width: 350px;
+    h1 {
+      width: 100px;
+    }
+    .sign-up-title {
+      margin-top: 70px;
+      p {
+        font-size: 14px;
+      }
+    }
+    & form .firAndlasName .first-name,
+    & form .firAndlasName .last-name {
+      width: 140px;
+    }
+    & form .user-name,
+    & form .email,
+    & form .pass,
+    & form .con-pass {
+      width: 300px;
+    }
+    & form .agreement {
       width: 300px;
     }
   }
