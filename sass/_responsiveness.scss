@@ -80,7 +80,7 @@
     }
   }
   .right-side {
-    height: 105vh;
+    height: 103vh;
     .part-one {
       display: none;
     }
@@ -104,14 +104,12 @@
       align-items: center;
       flex-direction: column;
       div {
-        width: 240px;
+        width: 255px;
+        margin-right: 23px;
       }
       h1 {
         width: 330px;
       }
-    }
-    .add-p {
-      margin-left: 20px;
     }
   }
   .SmartPhoneFixedTopBar {
@@ -255,10 +253,45 @@
     }
   }
   .customers {
-    height: 120vh;
+    height: 117vh;
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
+    }
+  }
+  .order {
+    width: 360px;
+    height: 140vh;
+    h1 {
+      margin-top: 70px;
+      margin-left: 16px;
+    }
+    .order-des {
+      width: 330px;
+      font-size: 9px;
+    }
+    .order-process-type {
+      width: 340px;
+      margin-left: 10px;
+      font-size: 9px;
+
+      li {
+        margin: 7px;
+
+        &.active-order::after {
+          bottom: -12px;
+        }
+      }
+    }
+    .s-part {
+      margin-top: 20px;
+      width: 330px;
+    }
+    .table-3 {
+      table {
+        width: 360px;
+        font-size: 9px;
+      }
     }
   }
 }

@@ -1936,7 +1936,7 @@ aside {
     cursor: pointer;
   }
   .right-side {
-    height: 105vh;
+    height: 103vh;
   }
   .right-side .part-one {
     display: none;
@@ -1962,13 +1962,11 @@ aside {
     flex-direction: column;
   }
   .right-side .part-3 div {
-    width: 240px;
+    width: 255px;
+    margin-right: 23px;
   }
   .right-side .part-3 h1 {
     width: 330px;
-  }
-  .right-side .add-p {
-    margin-left: 20px;
   }
   .SmartPhoneFixedTopBar {
     width: 100%;
@@ -2100,10 +2098,41 @@ aside {
     height: 20px;
   }
   .customers {
-    height: 120vh;
+    height: 117vh;
   }
   .customers .customers-title {
     margin-top: 80px;
     margin-left: 210px !important;
+  }
+  .order {
+    width: 360px;
+    height: 140vh;
+  }
+  .order h1 {
+    margin-top: 70px;
+    margin-left: 16px;
+  }
+  .order .order-des {
+    width: 330px;
+    font-size: 9px;
+  }
+  .order .order-process-type {
+    width: 340px;
+    margin-left: 10px;
+    font-size: 9px;
+  }
+  .order .order-process-type li {
+    margin: 7px;
+  }
+  .order .order-process-type li.active-order::after {
+    bottom: -12px;
+  }
+  .order .s-part {
+    margin-top: 20px;
+    width: 330px;
+  }
+  .order .table-3 table {
+    width: 360px;
+    font-size: 9px;
   }
 }/*# sourceMappingURL=index.css.map */
