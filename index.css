@@ -15,7 +15,7 @@ body {
 h1 {
   text-transform: capitalize;
   font-family: Tahoma, Arial;
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 main {
@@ -1143,6 +1143,7 @@ aside {
 
 .analytics {
   width: 750px;
+  overflow: hidden;
   display: none;
   opacity: 0;
 }
@@ -1254,20 +1255,20 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one,
 .analytics .analytics-progress-bars .ana-progress-bar-two {
-  width: 300px;
+  width: 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  padding: 15px;
+  padding: 5px;
   border-radius: 7px;
   font-family: tahoma;
   font-size: 15px;
-  margin: 10px;
+  margin: 5px;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one > div,
 .analytics .analytics-progress-bars .ana-progress-bar-two > div {
@@ -1283,7 +1284,7 @@ aside {
   text-transform: capitalize;
   margin: 0;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 7px;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder {
@@ -1291,6 +1292,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 5px;
+  margin-top: 25px;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div {
@@ -1307,14 +1310,14 @@ aside {
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div p,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div p {
   margin: 0;
-  font-size: 12px !important;
+  font-size: 10px !important;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div .left-dot-1,
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div .right-dot-1,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div .left-dot-1,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div .right-dot-1 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #7380ec;
   margin-right: 5px;
 }
@@ -1322,8 +1325,8 @@ aside {
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div .right-dot-2,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div .left-dot-2,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div .right-dot-2 {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: #41f1b6;
   margin-right: 5px;
 }
@@ -1331,12 +1334,12 @@ aside {
 .analytics .analytics-progress-bars .ana-progress-bar-one .ana-circle-2,
 .analytics .analytics-progress-bars .ana-progress-bar-two .ana-circle-1,
 .analytics .analytics-progress-bars .ana-progress-bar-two .ana-circle-2 {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: transparent;
   border-radius: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1351,8 +1354,8 @@ aside {
 .analytics .analytics-progress-bars .ana-progress-bar-two .ana-circle-2 .ana-circle-1-bar,
 .analytics .analytics-progress-bars .ana-progress-bar-two .ana-circle-2 .ana-circle-2-bar {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one .ana-circle-1 .ana-circle-1-bar,
@@ -1376,8 +1379,8 @@ aside {
 .analytics .analytics-progress-bars .ana-progress-bar-two .ana-circle-2 .ana-inside-circle-1,
 .analytics .analytics-progress-bars .ana-progress-bar-two .ana-circle-2 .ana-inside-circle-2 {
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   background-color: #dce1eb;
   border-radius: 50%;
   display: flex;
@@ -1393,6 +1396,9 @@ aside {
   font-size: 13px;
   cursor: pointer;
   color: #7380ec;
+}
+.analytics .show-more-4 p {
+  margin: 0;
 }
 
 .messages {
@@ -1565,7 +1571,6 @@ aside {
 }
 .products .products-items {
   width: 100%;
-  margin-top: 30px !important;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -1972,7 +1977,7 @@ aside {
   .right-side .part-two h1 {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    width: 330px;
+    width: 300px;
   }
   .right-side .part-3 {
     width: 375px;
@@ -1988,7 +1993,7 @@ aside {
   .right-side .part-3 h1 {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    width: 330px;
+    width: 300px;
   }
   .SmartPhoneFixedTopBar {
     width: 100%;
@@ -2090,32 +2095,32 @@ aside {
     cursor: pointer;
   }
   .table-2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .table-2 table {
-    width: 330px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 330px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .table-2 table tr {
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 280px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
     margin-top: 10px;
     margin-bottom: 15px;
     color: rgba(132, 139, 200, 0.18);
     font-weight: bold;
   }
   .table-2 table th {
-    width: 160px;
+    width: 160px !important;
   }
   .table-2 table td {
-    width: 130px;
+    width: 130px !important;
     font-size: 12px;
   }
   .table-2 table img {
@@ -2126,6 +2131,9 @@ aside {
     margin-top: 80px;
     margin-left: 210px !important;
   }
+  .customers h1 {
+    margin: 0 !important;
+  }
   .order {
     width: 360px;
   }
@@ -2134,16 +2142,16 @@ aside {
     margin-left: 16px;
   }
   .order .order-des {
-    width: 330px;
-    font-size: 9px;
+    width: 330px !important;
+    font-size: 9px !important;
   }
   .order .order-process-type {
-    width: 340px;
-    margin-left: 10px;
-    font-size: 9px;
+    width: 340px !important;
+    margin-left: 10px !important;
+    font-size: 9px !important;
   }
   .order .order-process-type::after {
-    width: 330px;
+    width: 330px !important;
   }
   .order .order-process-type li {
     margin: 7px;
@@ -2156,14 +2164,15 @@ aside {
     width: 330px;
   }
   .order .s-part .search-btn {
-    height: 35px !important;
+    height: 30px !important;
   }
   .order .s-part .fa-magnifying-glass {
     top: 9px;
   }
   .order .table-3 table {
-    width: 360px;
-    font-size: 9px;
+    width: 360px !important;
+    font-size: 9px !important;
+    border-spacing: 10px 20px !important;
   }
   .analytics {
     width: 350px;
@@ -2171,18 +2180,52 @@ aside {
   .analytics .h-one-analytics {
     margin-top: 70px;
   }
+  .analytics .ana-inside-box {
+    width: 200px !important;
+    margin: 5px !important;
+  }
+  .analytics .ana-inside-box p {
+    margin: 10px !important;
+  }
+  .analytics .ana-inside-box .box-title {
+    font-size: 14px !important;
+  }
   .analytics .analytics-boxes {
     flex-direction: column;
   }
+  .analytics .analytics-boxes .ana-num-value-1,
+.analytics .analytics-boxes .ana-num-value-2,
+.analytics .analytics-boxes .ana-num-value-3,
+.analytics .analytics-boxes .ana-num-value-4 {
+    font-size: 20px !important;
+  }
+  .analytics .analytics-boxes .arrow-top-1,
+.analytics .analytics-boxes .arrow-top-2,
+.analytics .analytics-boxes .arrow-top-3,
+.analytics .analytics-boxes .arrow-top-4 {
+    font-size: 15px !important;
+  }
+  .analytics .analytics-chart {
+    margin-top: 20px !important;
+  }
   .analytics .analytics-chart img {
-    width: 300px;
-    height: 230px;
+    width: 300px !important;
+    height: 230px !important;
   }
   .analytics .analytics-chart .chart-dotsAndtitle {
-    width: 200px;
+    width: 200px !important;
   }
   .analytics .analytics-progress-bars {
-    flex-direction: column;
+    margin-top: 20px !important;
+    flex-direction: column !important;
+  }
+  .analytics .ana-progress-bar-one,
+.analytics .ana-progress-bar-two {
+    margin: 10px !important;
+  }
+  .analytics .ana-progress-bar-one p,
+.analytics .ana-progress-bar-two p {
+    font-size: 10px !important;
   }
   .messages {
     width: 350px;
@@ -2191,10 +2234,20 @@ aside {
     margin-top: 70px !important;
   }
   .messages .in-msg-search .input-msg {
-    width: 260px;
+    width: 260px !important;
   }
   .messages .msg-holder {
-    width: 300px;
+    width: 300px !important;
+  }
+  .messages .ms-pa-2 {
+    font-size: 12px !important;
+  }
+  .messages .not-included-in-ipad-screen {
+    display: flex !important;
+  }
+  .messages .show-more-5 p {
+    margin-top: 13px !important;
+    margin-bottom: 13px !important;
   }
   .products {
     width: 350px;
@@ -2203,23 +2256,44 @@ aside {
     margin-top: 70px;
   }
   .products .products-title {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .products .products-items {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr !important;
   }
   .products .item {
-    width: 350px;
+    width: 350px !important;
+    height: 100% !important;
+    margin-top: 30px !important;
+  }
+  .products .item .product-img-holder-div {
+    width: 200px !important;
+    height: 250px !important;
+  }
+  .products .item .item-top {
+    text-align: center !important;
+  }
+  .products .item .item-top img {
+    width: 200px !important;
+    height: 250px !important;
+  }
+  .products .item .item-bottom {
+    width: 170px !important;
+  }
+  .products .show-more-6 p {
+    margin-top: 13px !important;
+    margin-bottom: 13px !important;
   }
   .sign-up {
     width: 350px;
+    margin-right: 0 !important;
   }
   .sign-up h1 {
     width: 100px;
   }
   .sign-up .sign-up-title {
-    margin-top: 70px;
+    margin-top: 70px !important;
   }
   .sign-up .sign-up-title p {
     font-size: 14px;
@@ -2248,6 +2322,7 @@ aside {
   }
   .desktop-aside {
     display: block;
+    margin-right: 10px;
   }
   .desktop-aside p {
     display: none;
@@ -2318,7 +2393,7 @@ aside {
     grid-template-rows: 1fr;
   }
   .dashboard .table table {
-    width: 100%;
+    width: 90%;
     border-spacing: 6px;
     margin-left: auto;
     margin-right: auto;
@@ -2333,7 +2408,12 @@ aside {
     bottom: -5px;
   }
   .dashboard .show-more {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right-side {
+    margin-left: 0 !important;
   }
   .right-side .part-one {
     margin-bottom: 0 !important;
@@ -2347,5 +2427,164 @@ aside {
   }
   .right-side .avatar-4 {
     display: none !important;
+  }
+  .customers h1 {
+    width: 100%;
+    margin: 0;
+  }
+  .customers .table-2 {
+    width: 97%;
+  }
+  .customers .table-2 table {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    border-spacing: 0;
+  }
+  .customers .table-2 table tr {
+    width: 410px;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+  .customers .table-2 table th {
+    margin-bottom: 5px;
+  }
+  .customers .table-2 table td {
+    font-size: 11px;
+  }
+  .customers .table-2 table img {
+    width: 20px;
+    height: 20px;
+  }
+  .customers .show-more-2 {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order .order-des {
+    width: 410px;
+    font-size: 8px;
+  }
+  .order .order-process-type {
+    width: 420px;
+    font-size: 12px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .order .order-process-type::after {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .order .s-part {
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .order .s-part .search-btn {
+    width: 100%;
+    height: 30px;
+  }
+  .order .s-part .fa-magnifying-glass {
+    top: 7px;
+    left: 12px;
+  }
+  .order .table-3 {
+    margin-top: 10px;
+  }
+  .order .table-3 table {
+    width: 420px;
+    font-size: 8px;
+    border-spacing: 4px;
+  }
+  .analytics .analytics-boxes {
+    width: 100%;
+    justify-content: center;
+  }
+  .analytics .analytics-boxes .ana-inside-box {
+    width: 100px;
+    margin: 0;
+    margin-right: 5px;
+  }
+  .analytics .analytics-boxes .box-title {
+    font-size: 7px;
+  }
+  .analytics .analytics-boxes .ana-num-value-1,
+.analytics .analytics-boxes .ana-num-value-2,
+.analytics .analytics-boxes .ana-num-value-3,
+.analytics .analytics-boxes .ana-num-value-4 {
+    font-size: 11px;
+  }
+  .analytics .analytics-boxes .arrow-top-1,
+.analytics .analytics-boxes .arrow-top-2,
+.analytics .analytics-boxes .arrow-top-3 {
+    font-size: 12px;
+  }
+  .analytics .analytics-main-title {
+    width: 100%;
+  }
+  .analytics .analytics-chart {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .analytics .analytics-chart img {
+    width: 250px;
+    height: 200px;
+  }
+  .analytics .analytics-chart .chart-dotsAndtitle {
+    width: 200px;
+  }
+  .messages .msg-form .input-msg {
+    width: 320px;
+    height: 25px;
+  }
+  .messages .msg-holder {
+    width: 320px;
+  }
+  .messages .msg-holder .ms-pa-2 {
+    font-size: 12px;
+  }
+  .messages .not-included-in-ipad-screen {
+    display: none;
+  }
+  .messages .show-more-5 p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .products .products-title {
+    font-size: 11px;
+  }
+  .products .products-items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .products .item {
+    height: 162px;
+    margin-top: 0;
+  }
+  .products .item .product-img-holder-div {
+    width: 100px;
+    height: 100px;
+  }
+  .products .item .item-top {
+    text-align: center;
+  }
+  .products .item .item-top img {
+    width: 100px;
+    height: 100px;
+  }
+  .products .item .item-bottom {
+    width: 145px;
+  }
+  .products .show-more-6 p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sign-up {
+    margin-right: 10px;
+  }
+  .sign-up .sign-up-title {
+    margin: 0;
   }
 }/*# sourceMappingURL=index.css.map */
