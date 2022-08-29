@@ -288,7 +288,6 @@ aside {
 
 .dashboard {
   width: 750px;
-  height: 100vh;
   margin-right: 0px;
   display: none;
   opacity: 0;
@@ -426,7 +425,6 @@ aside {
 }
 .dashboard table {
   width: 730px;
-  margin: 20px auto 0px auto;
   background-color: #fff;
   border-spacing: 30px;
   text-align: center;
@@ -485,7 +483,6 @@ aside {
 
 .right-side {
   width: 240px;
-  height: 100vh;
   margin-left: 20px;
   margin-right: 20px;
   display: flex;
@@ -560,6 +557,9 @@ aside {
   -o-border-radius: 50%;
   margin-right: 15px;
 }
+.right-side .update-box > div:not(:nth-child(3)) {
+  margin-bottom: 20px;
+}
 .right-side .update-box .avatar-1,
 .right-side .update-box .avatar-2,
 .right-side .update-box .avatar-3,
@@ -567,7 +567,6 @@ aside {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 20px;
 }
 .right-side .update-box .avatar-1 p,
 .right-side .update-box .avatar-2 p,
@@ -670,6 +669,7 @@ aside {
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.4s ease;
+  margin-bottom: 10px;
 }
 .right-side .add-p:hover {
   transform: scale(0.9);
@@ -688,7 +688,6 @@ aside {
 
 .customers {
   width: 750px;
-  height: 100vh;
   display: none;
   opacity: 0;
 }
@@ -955,7 +954,6 @@ aside {
 
 .order {
   width: 750px;
-  height: 100vh;
   display: none;
   opacity: 0;
 }
@@ -1145,7 +1143,6 @@ aside {
 
 .analytics {
   width: 750px;
-  height: 100vh;
   display: none;
   opacity: 0;
 }
@@ -1400,7 +1397,6 @@ aside {
 
 .messages {
   width: 750px;
-  height: 100vh;
   display: none;
   opacity: 0;
 }
@@ -1549,7 +1545,6 @@ aside {
 
 .products {
   width: 750px;
-  height: 100vh;
   display: none;
   opacity: 0;
 }
@@ -1570,7 +1565,6 @@ aside {
 }
 .products .products-items {
   width: 100%;
-  height: 650px;
   margin-top: 30px !important;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1656,7 +1650,6 @@ aside {
 
 .sign-up {
   width: 750px;
-  height: 100vh;
   display: none;
   opacity: 0;
 }
@@ -1856,7 +1849,7 @@ aside {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 849px) {
   .SmartPhoneFixedTopBar {
     display: flex !important;
   }
@@ -1878,7 +1871,6 @@ aside {
   }
   .dashboard {
     width: 375px;
-    height: 175vh;
   }
   .dashboard .h-one-dashboard {
     width: 375px;
@@ -1891,23 +1883,45 @@ aside {
     margin-left: 20px;
   }
   .dashboard .cards {
-    width: 375px;
-    flex-direction: column;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr !important;
     margin-top: 20px;
+  }
+  .dashboard .cards .fa-solid {
+    width: 20px !important;
+    height: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .dashboard .cards .mid-card {
+    flex-direction: row !important;
+  }
+  .dashboard .cards .mid-card .txt {
+    margin-right: 20px !important;
+  }
+  .dashboard .cards .mid-card .txt p {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .dashboard .cards .card-1,
 .dashboard .cards .card-2 {
+    width: 230px !important;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .dashboard .cards .card-3 {
+    width: 230px !important;
     margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .dashboard .table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 375px !important;
-    flex-direction: column;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
   }
   .dashboard .table .show-more {
     width: 375px;
@@ -1915,7 +1929,8 @@ aside {
   }
   .dashboard .table table {
     width: 330px !important;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     border-spacing: 15px !important;
   }
   .dashboard .table table .line::after {
@@ -1941,9 +1956,6 @@ aside {
     -o-border-radius: 50%;
     cursor: pointer;
   }
-  .right-side {
-    height: 103vh;
-  }
   .right-side .part-one {
     display: none !important;
   }
@@ -1958,6 +1970,8 @@ aside {
     width: 240px;
   }
   .right-side .part-two h1 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
     width: 330px;
   }
   .right-side .part-3 {
@@ -1972,6 +1986,8 @@ aside {
     margin-right: 23px;
   }
   .right-side .part-3 h1 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
     width: 330px;
   }
   .SmartPhoneFixedTopBar {
@@ -2106,16 +2122,12 @@ aside {
     width: 20px;
     height: 20px;
   }
-  .customers {
-    height: 114vh;
-  }
   .customers .customers-title {
     margin-top: 80px;
     margin-left: 210px !important;
   }
   .order {
     width: 360px;
-    height: 130vh;
   }
   .order h1 {
     margin-top: 70px;
@@ -2155,7 +2167,6 @@ aside {
   }
   .analytics {
     width: 350px;
-    height: 210vh;
   }
   .analytics .h-one-analytics {
     margin-top: 70px;
@@ -2175,7 +2186,6 @@ aside {
   }
   .messages {
     width: 350px;
-    height: 134vh;
   }
   .messages h1 {
     margin-top: 70px !important;
@@ -2188,7 +2198,6 @@ aside {
   }
   .products {
     width: 350px;
-    height: 305vh;
   }
   .products h1 {
     margin-top: 70px;
@@ -2224,6 +2233,13 @@ aside {
   .sign-up form .agreement {
     width: 300px;
   }
+  .left-options .op-holder:not(:nth-child(10)) {
+    margin-bottom: 0;
+  }
+  .left-options .op-holder:nth-child(10) {
+    position: inherit;
+    width: 170px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .SmartPhoneFixedTopBar,
@@ -2258,33 +2274,78 @@ aside {
     font-size: 15px;
   }
   .dashboard h1 {
-    width: 630px;
+    width: 410px;
+  }
+  .dashboard .cards {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .dashboard .cards .fa-solid {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 0;
+  }
+  .dashboard .cards .mid-card {
+    flex-direction: column;
+  }
+  .dashboard .cards .mid-card .txt {
+    margin-right: 0;
+  }
+  .dashboard .cards .mid-card .txt p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .dashboard .cards .last-update {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .dashboard .card-1, .dashboard .card-2, .dashboard .card-3 {
-    width: 180px;
+    width: 110px;
   }
   .dashboard .txt {
     font-size: 13px;
   }
   .dashboard .table {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 630px;
-    flex-direction: column;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
   .dashboard .table table {
-    width: 530px;
-    border-spacing: 10px;
-    margin-top: 0;
+    width: 100%;
+    border-spacing: 6px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .dashboard .table table th {
     font-size: 13px;
   }
+  .dashboard .table table td {
+    font-size: 11px;
+  }
   .dashboard .table table .line::after {
-    bottom: -8px;
+    bottom: -5px;
   }
   .dashboard .show-more {
-    width: 630px;
+    width: 100%;
+  }
+  .right-side .part-one {
+    margin-bottom: 0 !important;
+  }
+  .right-side h1 {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .right-side .part-two {
+    margin-bottom: 0;
+  }
+  .right-side .avatar-4 {
+    display: none !important;
   }
 }/*# sourceMappingURL=index.css.map */

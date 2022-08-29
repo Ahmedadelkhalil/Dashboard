@@ -1,5 +1,10 @@
 // .............................................. SMART PHONE RESPONSIVENESS
-@media screen and (max-width: 800px) {
+// @media screen and (max-width: 414px) {
+//   .dashboard {
+//     min-height: 175vh !important;
+//   }
+// }
+@media screen and (max-width: 849px) {
   .SmartPhoneFixedTopBar {
     display: flex !important;
   }
@@ -21,7 +26,7 @@
   }
   .dashboard {
     width: 375px;
-    height: 175vh;
+    // min-height: 235vh;
     .h-one-dashboard {
       width: 375px;
       margin-top: 70px;
@@ -33,30 +38,55 @@
       margin-left: 20px;
     }
     .cards {
-      width: 375px;
-      flex-direction: column;
+      width: 100% !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      grid-template-rows: 1fr 1fr 1fr !important;
       margin-top: 20px;
+      .fa-solid {
+        width: 20px !important;
+        height: 20px !important;
+        margin-bottom: 10px !important;
+      }
+      .mid-card {
+        flex-direction: row !important;
+        .txt {
+          margin-right: 20px !important;
+          p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
       .card-1,
       .card-2 {
+        width: 230px !important;
         margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .card-3 {
+        width: 230px !important;
         margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     .table {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 375px !important;
-      flex-direction: column;
+      width: 100% !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      grid-template-rows: 1fr !important;
+      // width: 375px !important;
+      // flex-direction: column;
       .show-more {
         width: 375px;
         margin-top: 10px;
       }
       table {
         width: 330px !important;
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         border-spacing: 15px !important;
         .line::after {
           bottom: -10px;
@@ -87,7 +117,7 @@
     }
   }
   .right-side {
-    height: 103vh;
+    // min-height: 115vh !important;
     .part-one {
       display: none !important;
     }
@@ -101,6 +131,8 @@
         width: 240px;
       }
       h1 {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
         width: 330px;
       }
     }
@@ -115,6 +147,8 @@
         margin-right: 23px;
       }
       h1 {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
         width: 330px;
       }
     }
@@ -262,7 +296,7 @@
     }
   }
   .customers {
-    height: 114vh;
+    // height: 114vh;
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
@@ -270,7 +304,7 @@
   }
   .order {
     width: 360px;
-    height: 130vh;
+    // height: 130vh;
     h1 {
       margin-top: 70px;
       margin-left: 16px;
@@ -315,7 +349,7 @@
   }
   .analytics {
     width: 350px;
-    height: 210vh;
+    // height: 210vh;
     .h-one-analytics {
       margin-top: 70px;
     }
@@ -337,7 +371,7 @@
   }
   .messages {
     width: 350px;
-    height: 134vh;
+    // height: 134vh;
     h1 {
       margin-top: 70px !important;
     }
@@ -352,7 +386,7 @@
   }
   .products {
     width: 350px;
-    height: 305vh;
+    // height: 305vh;
     h1 {
       margin-top: 70px;
     }
@@ -391,6 +425,13 @@
     & form .agreement {
       width: 300px;
     }
+  }
+  .left-options .op-holder:not(:nth-child(10)) {
+    margin-bottom: 0;
+  }
+  .left-options .op-holder:nth-child(10) {
+    position: inherit;
+    width: 170px;
   }
 }
 
@@ -432,36 +473,83 @@
   }
   .dashboard {
     h1 {
-      width: 630px;
+      width: 410px;
+    }
+    .cards {
+      width: 100%;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      .fa-solid {
+        width: 10px;
+        height: 10px;
+        margin-bottom: 0;
+      }
+      .mid-card {
+        flex-direction: column;
+        .txt {
+          margin-right: 0;
+          p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .last-update {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     & .card-1,
     & .card-2,
     & .card-3 {
-      width: 180px;
+      width: 110px;
     }
     & .txt {
       font-size: 13px;
     }
     .table {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      width: 630px;
-      flex-direction: column;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
       table {
-        width: 530px;
-        border-spacing: 10px;
-        margin-top: 0;
+        width: 100%;
+        border-spacing: 6px;
+        margin-left: auto;
+        margin-right: auto;
         th {
           font-size: 13px;
         }
+        td {
+          font-size: 11px;
+        }
         .line::after {
-          bottom: -8px;
+          bottom: -5px;
         }
       }
     }
     .show-more {
-      width: 630px;
+      width: 100%;
+    }
+  }
+  .right-side {
+    .part-one {
+      margin-bottom: 0 !important;
+    }
+    h1 {
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+    .part-two {
+      margin-bottom: 0;
+    }
+    .avatar-4 {
+      display: none !important;
     }
   }
 }
