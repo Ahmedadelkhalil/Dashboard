@@ -2185,6 +2185,7 @@ aside {
   .order .s-part .search-btn {
     height: 25px !important;
     line-height: 0 !important;
+    outline-offset: 0 !important;
   }
   .order .s-part .fa-magnifying-glass {
     top: 5px !important;
