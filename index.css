@@ -2346,7 +2346,7 @@ aside {
     width: 170px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .SmartPhoneFixedTopBar,
 .mobile-aside {
     display: none;
@@ -2412,7 +2412,7 @@ aside {
     align-items: center;
   }
   .dashboard .card-1, .dashboard .card-2, .dashboard .card-3 {
-    width: 110px;
+    width: 75%;
   }
   .dashboard .txt {
     font-size: 13px;
@@ -2601,6 +2601,8 @@ aside {
   .products .item {
     height: 162px;
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .products .item .product-img-holder-div {
     width: 100px;
@@ -2627,7 +2629,7 @@ aside {
     margin: 0;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1250px) {
   .SmartPhoneFixedTopBar,
 .mobile-aside {
     display: none;

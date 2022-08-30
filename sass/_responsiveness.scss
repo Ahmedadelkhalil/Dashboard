@@ -1,9 +1,4 @@
 // .............................................. SMART PHONE RESPONSIVENESS
-// @media screen and (max-width: 414px) {
-//   .dashboard {
-//     min-height: 175vh !important;
-//   }
-// }
 @media screen and (max-width: 849px) {
   .SmartPhoneFixedTopBar {
     display: flex !important;
@@ -26,7 +21,6 @@
   }
   .dashboard {
     width: 375px;
-    // min-height: 235vh;
     .h-one-dashboard {
       width: 100%;
       margin-top: 70px;
@@ -77,8 +71,6 @@
       display: grid !important;
       grid-template-columns: 1fr !important;
       grid-template-rows: 1fr !important;
-      // width: 375px !important;
-      // flex-direction: column;
       .show-more {
         width: 375px;
         margin-top: 10px;
@@ -117,7 +109,6 @@
     }
   }
   .right-side {
-    // min-height: 115vh !important;
     .part-one {
       display: none !important;
     }
@@ -305,8 +296,6 @@
     }
   }
   .customers {
-    // width: 375px !important;
-    // height: 114vh;
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
@@ -322,7 +311,6 @@
   }
   .order {
     width: 360px;
-    // height: 130vh;
     h1 {
       margin-top: 70px;
       margin-left: 16px;
@@ -353,7 +341,6 @@
       margin-top: 20px;
       width: 330px;
       .search-btn {
-        // height: 25px !important;
         line-height: 0 !important;
         outline-offset: 0 !important;
       }
@@ -372,7 +359,6 @@
   }
   .analytics {
     width: 350px;
-    // height: 210vh;
     .h-one-analytics {
       margin-top: 70px;
       width: 100% !important;
@@ -462,7 +448,6 @@
   }
   .products {
     width: 350px;
-    // height: 305vh;
     h1 {
       margin-top: 70px;
       width: 100% !important;
@@ -540,7 +525,7 @@
 
 // .............................................. IPAD RESPONSIVENESS
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .SmartPhoneFixedTopBar,
   .mobile-aside {
     display: none;
@@ -611,7 +596,7 @@
     & .card-1,
     & .card-2,
     & .card-3 {
-      width: 110px;
+      width: 75%;
     }
     & .txt {
       font-size: 13px;
@@ -725,7 +710,6 @@
       .search-btn {
         width: 100%;
         height: 30px;
-        // margin-left: 30px;
       }
       .fa-magnifying-glass {
         top: 7px;
@@ -742,7 +726,6 @@
     }
   }
   .analytics {
-    // min-width: 450px;
     .analytics-boxes {
       width: 100%;
       justify-content: center;
@@ -816,6 +799,8 @@
     .item {
       height: 162px;
       margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
       .product-img-holder-div {
         width: 100px;
         height: 100px;
@@ -848,7 +833,7 @@
 
 // .............................. DESKTOP RESPONSIVENESS
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1250px) {
   .SmartPhoneFixedTopBar,
   .mobile-aside {
     display: none;

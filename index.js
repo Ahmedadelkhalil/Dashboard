@@ -722,6 +722,7 @@ function analyticsleftcounttop(e) {
 
     if (leftOneTop.textContent === anaonegoal) {
       clearInterval(anaoneholder);
+      leftOneTop.textContent = `$ 434`;
     }
   }, 10 / anaonegoal);
 }
@@ -825,7 +826,7 @@ function lastanaTopfun(e) {
     lastanaTop.textContent++;
     if (lastanaTop.textContent === goal) {
       clearInterval(holder);
-      lastanaTop.textContent = `$59.30`;
+      lastanaTop.textContent = `$ 59.30`;
     }
   }, 10 / goal);
 }

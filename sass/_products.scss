@@ -1,6 +1,5 @@
 .products {
   width: 750px;
-  // height: 100vh;
   display: none;
   opacity: 0;
   &.active-screen {
@@ -20,8 +19,6 @@
   }
   .products-items {
     width: 100%;
-    // height: 650px;
-    // margin-top: 30px !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
