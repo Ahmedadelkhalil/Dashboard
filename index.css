@@ -591,6 +591,7 @@ aside {
 .right-side .update-box .avatar-4 .client {
   font-weight: bold;
 }
+.right-side .part-two,
 .right-side .part-3 {
   width: 100%;
 }
@@ -656,8 +657,10 @@ aside {
   font-weight: bolder;
 }
 .right-side .add-p {
-  width: 240px;
+  width: 235px !important;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px dashed #7380ec;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1310,7 +1313,7 @@ aside {
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div p,
 .analytics .analytics-progress-bars .ana-progress-bar-two .dots-holder div p {
   margin: 0;
-  font-size: 10px !important;
+  font-size: 10px;
 }
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div .left-dot-1,
 .analytics .analytics-progress-bars .ana-progress-bar-one .dots-holder div .right-dot-1,
@@ -1691,6 +1694,7 @@ aside {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .sign-up form img {
   width: 22px;
@@ -1878,14 +1882,14 @@ aside {
     width: 375px;
   }
   .dashboard .h-one-dashboard {
-    width: 375px;
+    width: 100%;
     margin-top: 70px;
-    margin-left: 20px;
+    margin-left: 50px;
   }
   .dashboard .h-one-recentorder {
-    width: 375px;
+    width: 100%;
     margin: 20px 10px;
-    margin-left: 20px;
+    margin-left: 50px;
   }
   .dashboard .cards {
     width: 100% !important;
@@ -1965,7 +1969,7 @@ aside {
     display: none !important;
   }
   .right-side .part-two {
-    width: 375px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1973,14 +1977,16 @@ aside {
   }
   .right-side .part-two div {
     width: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .right-side .part-two h1 {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    width: 300px;
+    width: 100%;
   }
   .right-side .part-3 {
-    width: 375px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1988,12 +1994,19 @@ aside {
   }
   .right-side .part-3 div {
     width: 255px;
-    margin-right: 23px;
+    margin-right: 0;
   }
   .right-side .part-3 h1 {
     margin-top: 15px !important;
     margin-bottom: 15px !important;
-    width: 300px;
+    width: 100%;
+  }
+  .right-side .add-p-div {
+    position: relative !important;
+    width: 100% !important;
+  }
+  .right-side .add-p-div .add-p {
+    margin-left: 10px !important;
   }
   .SmartPhoneFixedTopBar {
     width: 100%;
@@ -2131,8 +2144,13 @@ aside {
     margin-top: 80px;
     margin-left: 210px !important;
   }
+  .customers .customers-title p {
+    margin-left: 15px;
+  }
   .customers h1 {
+    width: 100%;
     margin: 0 !important;
+    margin-left: 15px !important;
   }
   .order {
     width: 360px;
@@ -2144,6 +2162,7 @@ aside {
   .order .order-des {
     width: 330px !important;
     font-size: 9px !important;
+    margin-left: 20px !important;
   }
   .order .order-process-type {
     width: 340px !important;
@@ -2165,20 +2184,26 @@ aside {
   }
   .order .s-part .search-btn {
     height: 30px !important;
+    line-height: 0 !important;
   }
   .order .s-part .fa-magnifying-glass {
     top: 9px;
   }
+  .order .table-3 {
+    margin-top: 20px !important;
+  }
   .order .table-3 table {
     width: 360px !important;
     font-size: 9px !important;
-    border-spacing: 10px 20px !important;
+    border-spacing: 10px !important;
   }
   .analytics {
     width: 350px;
   }
   .analytics .h-one-analytics {
     margin-top: 70px;
+    width: 100% !important;
+    margin-left: 30px !important;
   }
   .analytics .ana-inside-box {
     width: 200px !important;
@@ -2232,6 +2257,8 @@ aside {
   }
   .messages h1 {
     margin-top: 70px !important;
+    width: 100% !important;
+    margin-left: 30px !important;
   }
   .messages .in-msg-search .input-msg {
     width: 260px !important;
@@ -2254,9 +2281,13 @@ aside {
   }
   .products h1 {
     margin-top: 70px;
+    width: 100% !important;
+    margin-left: 30px !important;
   }
   .products .products-title {
-    font-size: 14px !important;
+    font-size: 12px !important;
+    width: 80% !important;
+    margin-left: 30px !important;
   }
   .products .products-items {
     grid-template-columns: 1fr !important;
@@ -2315,7 +2346,7 @@ aside {
     width: 170px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .SmartPhoneFixedTopBar,
 .mobile-aside {
     display: none;
@@ -2428,6 +2459,13 @@ aside {
   .right-side .avatar-4 {
     display: none !important;
   }
+  .right-side .add-p-div {
+    position: relative;
+    width: 100%;
+  }
+  .right-side .add-p-div .add-p {
+    margin-left: 0;
+  }
   .customers h1 {
     width: 100%;
     margin: 0;
@@ -2462,8 +2500,9 @@ aside {
     margin-right: auto;
   }
   .order .order-des {
-    width: 410px;
+    width: 70%;
     font-size: 8px;
+    margin-left: 30px;
   }
   .order .order-process-type {
     width: 420px;
@@ -2586,5 +2625,56 @@ aside {
   }
   .sign-up .sign-up-title {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .SmartPhoneFixedTopBar,
+.mobile-aside {
+    display: none;
+  }
+  .analytics-progress-bars {
+    margin-top: 20px !important;
+  }
+  .analytics-progress-bars .ana-progress-bar-one,
+.analytics-progress-bars .ana-progress-bar-two {
+    width: 300px !important;
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+  .analytics-progress-bars .ana-progress-bar-one p,
+.analytics-progress-bars .ana-progress-bar-two p {
+    font-size: 14px !important;
+  }
+  .analytics-progress-bars .ana-circle-1,
+.analytics-progress-bars .ana-circle-2 {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .analytics-progress-bars .ana-circle-1 .ana-circle-1-bar,
+.analytics-progress-bars .ana-circle-1 .ana-circle-2-bar,
+.analytics-progress-bars .ana-circle-2 .ana-circle-1-bar,
+.analytics-progress-bars .ana-circle-2 .ana-circle-2-bar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .analytics-progress-bars .ana-circle-1 .ana-inside-circle-1,
+.analytics-progress-bars .ana-circle-1 .ana-inside-circle-2,
+.analytics-progress-bars .ana-circle-2 .ana-inside-circle-1,
+.analytics-progress-bars .ana-circle-2 .ana-inside-circle-2 {
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .analytics-progress-bars .left-dot-1,
+.analytics-progress-bars .left-dot-2,
+.analytics-progress-bars .right-dot-1,
+.analytics-progress-bars .right-dot-2 {
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .analytics-progress-bars .dots-holder p {
+    font-size: 14px !important;
+  }
+  .show-more-4 p {
+    margin: 13px !important;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -28,14 +28,14 @@
     width: 375px;
     // min-height: 235vh;
     .h-one-dashboard {
-      width: 375px;
+      width: 100%;
       margin-top: 70px;
-      margin-left: 20px;
+      margin-left: 50px;
     }
     .h-one-recentorder {
-      width: 375px;
+      width: 100%;
       margin: 20px 10px;
-      margin-left: 20px;
+      margin-left: 50px;
     }
     .cards {
       width: 100% !important;
@@ -122,34 +122,43 @@
       display: none !important;
     }
     .part-two {
-      width: 375px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       div {
         width: 240px;
+        margin-left: auto;
+        margin-right: auto;
       }
       h1 {
         margin-top: 15px !important;
         margin-bottom: 15px !important;
-        width: 300px;
+        width: 100%;
       }
     }
     .part-3 {
-      width: 375px;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       div {
         width: 255px;
-        margin-right: 23px;
+        margin-right: 0;
       }
       h1 {
         margin-top: 15px !important;
         margin-bottom: 15px !important;
-        width: 300px;
+        width: 100%;
+      }
+    }
+    .add-p-div {
+      position: relative !important;
+      width: 100% !important;
+      .add-p {
+        margin-left: 10px !important;
       }
     }
   }
@@ -301,9 +310,14 @@
     .customers-title {
       margin-top: 80px;
       margin-left: 210px !important;
+      p {
+        margin-left: 15px;
+      }
     }
     h1 {
+      width: 100%;
       margin: 0 !important;
+      margin-left: 15px !important;
     }
   }
   .order {
@@ -316,6 +330,7 @@
     .order-des {
       width: 330px !important;
       font-size: 9px !important;
+      margin-left: 20px !important;
     }
     .order-process-type {
       width: 340px !important;
@@ -339,16 +354,18 @@
       width: 330px;
       .search-btn {
         height: 30px !important;
+        line-height: 0 !important;
       }
       .fa-magnifying-glass {
         top: 9px;
       }
     }
     .table-3 {
+      margin-top: 20px !important;
       table {
         width: 360px !important;
         font-size: 9px !important;
-        border-spacing: 10px 20px !important;
+        border-spacing: 10px !important;
       }
     }
   }
@@ -357,6 +374,8 @@
     // height: 210vh;
     .h-one-analytics {
       margin-top: 70px;
+      width: 100% !important;
+      margin-left: 30px !important;
     }
     .ana-inside-box {
       width: 200px !important;
@@ -416,6 +435,8 @@
     width: 350px;
     h1 {
       margin-top: 70px !important;
+      width: 100% !important;
+      margin-left: 30px !important;
     }
     .in-msg-search {
       .input-msg {
@@ -443,9 +464,13 @@
     // height: 305vh;
     h1 {
       margin-top: 70px;
+      width: 100% !important;
+      margin-left: 30px !important;
     }
     .products-title {
-      font-size: 14px !important;
+      font-size: 12px !important;
+      width: 80% !important;
+      margin-left: 30px !important;
     }
     .products-items {
       grid-template-columns: 1fr !important;
@@ -514,7 +539,7 @@
 
 // .............................................. IPAD RESPONSIVENESS
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .SmartPhoneFixedTopBar,
   .mobile-aside {
     display: none;
@@ -632,6 +657,13 @@
     .avatar-4 {
       display: none !important;
     }
+    .add-p-div {
+      position: relative;
+      width: 100%;
+      .add-p {
+        margin-left: 0;
+      }
+    }
   }
   .customers {
     h1 {
@@ -670,8 +702,9 @@
   }
   .order {
     .order-des {
-      width: 410px;
+      width: 70%;
       font-size: 8px;
+      margin-left: 30px;
     }
     .order-process-type {
       width: 420px;
@@ -811,3 +844,57 @@
     }
   }
 }
+
+// .............................. DESKTOP RESPONSIVENESS
+
+@media screen and (min-width: 1025px) {
+  .SmartPhoneFixedTopBar,
+  .mobile-aside {
+    display: none;
+  }
+  .analytics-progress-bars {
+    margin-top: 20px !important;
+    .ana-progress-bar-one,
+    .ana-progress-bar-two {
+      width: 300px !important;
+      margin: 10px !important;
+      padding: 10px !important;
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .ana-circle-1,
+    .ana-circle-2 {
+      width: 180px !important;
+      height: 180px !important;
+      .ana-circle-1-bar,
+      .ana-circle-2-bar {
+        width: 150px !important;
+        height: 150px !important;
+      }
+      .ana-inside-circle-1,
+      .ana-inside-circle-2 {
+        width: 90px !important;
+        height: 90px !important;
+      }
+    }
+    .left-dot-1,
+    .left-dot-2,
+    .right-dot-1,
+    .right-dot-2 {
+      width: 15px !important;
+      height: 15px !important;
+    }
+    .dots-holder {
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  .show-more-4 {
+    p {
+      margin: 13px !important;
+    }
+  }
+}
+// ................................................ END RESPONSIVENESS PROCESS

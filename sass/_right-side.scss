@@ -99,6 +99,7 @@
       }
     }
   }
+  .part-two,
   .part-3 {
     width: 100%;
   }
@@ -166,8 +167,10 @@
     font-weight: bolder;
   }
   .add-p {
-    width: 240px;
+    width: 235px !important;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
     @extend%display;
     border: 2px dashed $color-1;
     border-radius: 10px;
