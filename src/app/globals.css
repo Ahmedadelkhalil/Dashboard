@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Cormorant:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap&family=Oswald:wght@300;400;500;600;700&display=swap");
+html,
+body {
+  overflow-x: hidden !important;
+}
+/* FullCalendar Customization */
+.fc-event,
+.fc-event a {
+  background-color: green;
+  color: #fff;
+}
+.fc-license-message {
+  display: none !important;
+}
+.fc-toolbar.fc-header-toolbar h2,
+.fc .fc-col-header-cell-cushion {
+  font-family: "Syne";
+  font-weight: 600;
+}
+@media (max-width: 300px) {
+  .fc-toolbar.fc-header-toolbar h2 {
+    font-size: 18px;
+  }
+  .fc .fc-col-header-cell-cushion {
+    font-size: 10px;
+  }
+}
+@media (min-width: 301px) {
+  .fc-toolbar.fc-header-toolbar h2 {
+    font-size: 20px;
+  }
+  .fc .fc-col-header-cell-cushion {
+    font-size: 12px;
+  }
+}
+@media (min-width: 500px) {
+  .fc-toolbar.fc-header-toolbar h2 {
+    font-size: 22px;
+  }
+  .fc .fc-col-header-cell-cushion {
+    font-size: 15px;
+  }
+}
+@media (min-width: 767px) {
+  .fc-toolbar.fc-header-toolbar h2 {
+    font-size: 25px;
+  }
+}
+/* SCROLBAR CUSTOMIZATION */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #dad8d8;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+/* LOADER ANIMATION */
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
