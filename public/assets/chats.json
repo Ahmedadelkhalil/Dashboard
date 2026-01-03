@@ -1,0 +1,47 @@
+[
+  {
+    "userName": "Ahmed Adel",
+    "userImg": "https://raw.githubusercontent.com/DATA-Container-100/hotel-cdn-imgs/main/uploads/male_avatar_dash_2.jpg",
+    "status": "online",
+    "msg": "i'm gonna text you when i'm there",
+    "timeMsgSentIn": "12 min",
+    "seen": false,
+    "newMsgs": 3
+  },
+  {
+    "userName": "Omnia Ashraf",
+    "userImg": "https://raw.githubusercontent.com/AhmedKhalilFED/Dashboard-Imgs/42071d7c166c65ceaf6535d78b412dce1e6fc818/Girl_01.jpg",
+    "status": "online",
+    "msg": "I am waiting for you.",
+    "timeMsgSentIn": "5:54 PM",
+    "seen": true,
+    "newMsgs": 0
+  },
+  {
+    "userName": "Mahmoud Ali",
+    "userImg": "https://raw.githubusercontent.com/AhmedKhalilFED/Dashboard-Imgs/42071d7c166c65ceaf6535d78b412dce1e6fc818/Man_01.jpg",
+    "status": "pending",
+    "msg": "Where are you now?",
+    "timeMsgSentIn": "10:12 PM",
+    "seen": true,
+    "newMsgs": 0
+  },
+  {
+    "userName": "Salma Nabil",
+    "userImg": "https://raw.githubusercontent.com/AhmedKhalilFED/Dashboard-Imgs/42071d7c166c65ceaf6535d78b412dce1e6fc818/Girl_03.jpg",
+    "status": "offline",
+    "msg": "I really love that!",
+    "timeMsgSentIn": "Oct 23",
+    "seen": false,
+    "newMsgs": 2
+  },
+  {
+    "userName": "Ibrahim Amr",
+    "userImg": "https://raw.githubusercontent.com/AhmedKhalilFED/Dashboard-Imgs/42071d7c166c65ceaf6535d78b412dce1e6fc818/Man_02.jpg",
+    "status": "pending",
+    "msg": "wow! Thats amazing",
+    "timeMsgSentIn": "Sep 20",
+    "seen": true,
+    "newMsgs": 0
+  }
+]
